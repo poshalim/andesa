@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог</title>
+    <title>Оформление заказа</title>
     <link rel="icon" type="image/svg" href="../img/favicon.svg">
-    <link rel="stylesheet" href="../css/catalog/index.min.css?_v=20221202150531">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+    <link rel="stylesheet" href="../css/ordering/index.min.css">
 </head>
 
 <body>
@@ -162,9 +161,165 @@
 </header>
 
 
-
         <main class="main">
-            <div class="spinner-wrapper"></div>
+            <section class="ordering">
+                <div class="container">
+                    <div class="breadcrumbs ordering__breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item"><a href="catalog.html" class="breadcrumbs__link">Каталог</a>
+                            </li>
+                            <li class="breadcrumbs__item"><a href="product.html" class="breadcrumbs__link">ИБП
+                                    CyberPower
+                                    BU600E</a></li>
+                            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Оформление заказа</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ordering-tabs__wrapper tabs__wrapper">
+                        <div class="ordering-tabs__inner">
+                            <h1 class="ordering__title">Оформление заказа</h1>
+                            <h3 class="ordering__subtitle">Тип покупателя и регион доставки</h3>
+                            <div class="ordering-tabs__btns tabs__btns">
+                                <div class="ordering-tabs__btn ordering-tabs__btn--active tabs__btn"
+                                    data-tab-btn-number="1">
+                                    <div class="ordering__type-checked">
+                                        <svg class="ordering__checked-icon" width="15" height="14" viewBox="0 0 15 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 9L5 12L14 1" stroke="white" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                    <span>Физическое лицо</span>
+                                </div>
+                                <div class="ordering-tabs__btn tabs__btn" data-tab-btn-number="2">
+                                    <div class="ordering__type-checked">
+                                        <svg class="ordering__checked-icon" width="15" height="14" viewBox="0 0 15 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 9L5 12L14 1" stroke="white" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                    <span>Юридическое лицо</span>
+                                </div>
+                            </div>
+                            <h3 class="ordering__subtitle">Покупатель</h3>
+                            <div class="ordering-tabs__items tabs__items">
+                                <form class="ordering-tabs__item tabs__tab-item" id="ordering-form-individual"
+                                    data-tab-content-number="1">
+                                    <fieldset class="ordering__input-container">
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="fio">ФИО</label>
+                                            <input class="ordering__input form__input" id="fio" type="text"
+                                                placeholder="Введите Ваше ФИО">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="email">E-mail</label>
+                                            <input class="ordering__input form__input" id="email" type="email"
+                                                placeholder="Введите адрес электронной почты">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="phone-number">Телефон</label>
+                                            <input class="ordering__input form__input" id="phone-number" type="tel"
+                                                placeholder="+7 -- --- --- --">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="address">Адрес доставки</label>
+                                            <input class="ordering__input form__input" id="address" type="text"
+                                                placeholder="Введите адрес доставки">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="comment">Комментарий к заказу</label>
+                                            <textarea class="ordering__textarea" id="comment"
+                                                placeholder="Здесь Вы можете указать Ваши пожелания...."></textarea>
+                                        </fieldset>
+                                    </fieldset>
+                                </form>
+                                <form class="ordering-tabs__item tabs__tab-item" id="ordering-form-company"
+                                    data-tab-content-number="2">
+                                    <fieldset class="ordering__input-container">
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="ordering-name-company">Название
+                                                компании</label>
+                                            <input class="ordering__input form__input" id="ordering-name-company"
+                                                type="text" placeholder="Введите название компании">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="ordering-legal-address">Юридический
+                                                адрес</label>
+                                            <input class="ordering__input form__input" id="ordering-legal-address"
+                                                type="text" placeholder="Введите юридический адрес">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="inn-company">ИНН</label>
+                                            <input class="ordering__input form__input" id="inn-company" type="number"
+                                                placeholder="Введите ИНН">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="kpp-company">КПП</label>
+                                            <input class="ordering__input form__input" id="kpp-company" type="number"
+                                                placeholder="Введите КПП">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="contact-person-company">Контактное
+                                                лицо</label>
+                                            <input class="ordering__input form__input" id="contact-person-company"
+                                                type="text" placeholder="Введите Ваше ФИО">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="email-company">E-mail</label>
+                                            <input class="ordering__input form__input" id="email-company"
+                                                type="email" placeholder="Введите адрес электронной почты">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="phone-number-company">Телефон</label>
+                                            <input class="ordering__input form__input" id="phone-number-company"
+                                                type="tel" placeholder="+7 -- --- --- --">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="address-company">Адрес доставки</label>
+                                            <input class="ordering__input form__input" id="address-company" type="text"
+                                                placeholder="Введите адрес доставки">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="comment-company">Комментарий к
+                                                заказу</label>
+                                            <textarea class="ordering__textarea" id="comment-company"
+                                                placeholder="Здесь Вы можете указать Ваши пожелания...."></textarea>
+                                        </fieldset>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="ordering__files">
+                                <a class="ordering__file" href="#">
+                                    <svg class="ordering__file-icon" width="16" height="19" viewBox="0 0 16 19"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="14" height="17" rx="2" fill="#7E869E"
+                                            fill-opacity="0.25" stroke="#1F2324" stroke-width="1.2" />
+                                        <path d="M5 6H11" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
+                                        <path d="M5 10H11" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
+                                        <path d="M5 14H9" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
+                                    </svg>
+                                    <p>Документ.pdf</p>
+                                </a>
+                            </div>
+                            <a class="ordering__addFile" href="#">+ Добавить документ</a>
+                        </div>
+                        <div class="ordering__cart">
+                            <div class="ordering__subtitle-container">
+                                <h3 class="ordering__subtitle">Ваш заказ</h3>
+                                <a class="ordering__change-btn" href="cart.html">Изменить</a>
+                            </div>
+                            <ul class="ordering__items">
+                                <li class="spinner-wrapper"></li>
+                            </ul>
+                            <p class="ordering__total-sum"></p>
+                            <button class="ordering__checkout-btn ordering__submit btn"
+                                form="ordering-form-individual">Оформить
+                                заказ</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
     <div class="footer__subscribe subscribe">
@@ -490,338 +645,7 @@
 </div>
     </div>
 
-    <div class="modal quickOrder">
-        <div class="modal__bg">
-            <div class="modal__content quickOrder__content">
-                <h2 class="quickOrder__title">Быстрый заказ</h2>
-                <form class="quickOrder__form form">
-                    <fieldset class="quickOrder__input-group form__input-group">
-                        <label class="quickOrder__label" for="quickOrder-name">Имя</label>
-                        <input class="quickOrder__input form__input" id="quickOrder-name" type="text"
-                            placeholder="Введите ваше имя">
-                    </fieldset>
-                    <fieldset class="quickOrder__input-group form__input-group">
-                        <label class="quickOrder__label" for="quickOrder-surname">Фамилия</label>
-                        <input class="quickOrder__input form__input" id="quickOrder-surname" type="text"
-                            placeholder="Введите вашу фамилию">
-                    </fieldset>
-                    <fieldset class="quickOrder__input-group form__input-group">
-                        <label class="quickOrder__label" for="quickOrder-patronymic">Отчество</label>
-                        <input class="quickOrder__input form__input" id="quickOrder-patronymic" type="text"
-                            placeholder="Введите ваше отчество">
-                    </fieldset>
-                    <fieldset class="quickOrder__input-group form__input-group">
-                        <label class="quickOrder__label" for="quickOrder-email">E-mail</label>
-                        <input class="quickOrder__input form__input" id="quickOrder-email" type="email"
-                            placeholder="E-mail....">
-                    </fieldset>
-                    <fieldset class="quickOrder__input-group form__input-group">
-                        <label class="quickOrder__label" for="quickOrder-comment">Комментарий к заказу</label>
-                        <textarea class="quickOrder__textarea" id="quickOrder-comment"
-                            placeholder="Комментарий.."></textarea>
-                    </fieldset>
-                    <div class="quickOrder__files">
-                        <a class="quickOrder__file" href="#">
-                            <svg width="16" height="19" viewBox="0 0 16 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect x="1" y="1" width="14" height="17" rx="2" fill="#7E869E" fill-opacity="0.25"
-                                    stroke="#1F2324" stroke-width="1.2" />
-                                <path d="M5 6H11" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
-                                <path d="M5 10H11" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
-                                <path d="M5 14H9" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
-                            </svg>
-
-                            <p>Документ.pdf</p>
-                        </a>
-                    </div>
-                    <button class="quickOrder__addFile">+ Добавить документ</button>
-                    <fieldset class="quickOrder__checkbox-group form__checkbox-group">
-                        <input class="quickOrder__checkbox form__checkbox" id="quickOrder-checkbox" type="checkbox">
-                        <label class="quickOrder__checkbox-label form__checkbox-label"
-                            for="quickOrder-checkbox">Согласие на
-                            обработку
-                            персональных данных</label>
-                    </fieldset>
-                    <button class="quickOrder__submit btn">Отправить</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <template id="catalog">
-    <section class="catalog">
-        <div class="container">
-            <div class="breadcrumbs catalog__bread-crumbs">
-                <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item"><a href="../index.html" class="breadcrumbs__link">Главная</a>
-                    </li>
-                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
-                </ul>
-            </div>
-            <div class="catalog__content">
-                <div class="catalog__filter catalog-filter">
-                    <div class="catalog-filter__menu">
-                        <svg class="catalog-filter__close close" width="22" height="22" viewBox="0 0 22 22" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="5.65695" y="4.94971" width="15" height="1" transform="rotate(45 5.65695 4.94971)"
-                                fill="#1F2324" />
-                            <rect x="16.2635" y="5.65674" width="15" height="1" transform="rotate(135 16.2635 5.65674)"
-                                fill="#1F2324" />
-                        </svg>
-                        <div class="catalog-filter__category">
-                            <p class="catalog-filter__title">Категория</p>
-                            <fieldset class="catalog-filter__checkbox-group">
-                                <input class="catalog-filter__checkbox" id="ibp" name="category-ibp" type="checkbox">
-                                <label class="catalog-filter__checkbox-label" for="ibp">Интерактивные
-                                    ИБП</label>
-                            </fieldset>
-                            <fieldset class="catalog-filter__checkbox-group">
-                                <input class="catalog-filter__checkbox" id="smart" name="category-smart" type="checkbox">
-                                <label class="catalog-filter__checkbox-label" for="smart">SMART и
-                                    онлайн ИБП</label>
-                            </fieldset>
-                            <fieldset class="catalog-filter__checkbox-group">
-                                <input class="catalog-filter__checkbox" id="threePhase" name="category-threePhase"
-                                    type="checkbox">
-                                <label class="catalog-filter__checkbox-label" for="threePhase">Трехфазные
-                                    системы</label>
-                            </fieldset>
-                            <fieldset class="catalog-filter__checkbox-group">
-                                <input class="catalog-filter__checkbox" id="powerDistributors"
-                                    name="category-powerDistributors" type="checkbox">
-                                <label class="catalog-filter__checkbox-label" for="powerDistributors">Распределители
-                                    питания</label>
-                            </fieldset>
-                            <fieldset class="catalog-filter__checkbox-group">
-                                <input class="catalog-filter__checkbox" id="monitoring" name="category-monitoring"
-                                    type="checkbox">
-                                <label class="catalog-filter__checkbox-label" for="monitoring">Мониторинг и
-                                    управление</label>
-                            </fieldset>
-                            <fieldset class="catalog-filter__checkbox-group">
-                                <input class="catalog-filter__checkbox" id="ibpForHeating" name="category-ibpForHeating"
-                                    type="checkbox">
-                                <label class="catalog-filter__checkbox-label" for="ibpForHeating">ИБП
-                                    для
-                                    систем отопления</label>
-                            </fieldset>
-                            <fieldset class="catalog-filter__checkbox-group">
-                                <input class="catalog-filter__checkbox" id="networkFilters" name="category-networkFilters"
-                                    type="checkbox">
-                                <label class="catalog-filter__checkbox-label" for="networkFilters">Сетевые
-                                    фильтры</label>
-                            </fieldset>
-                            <fieldset class="catalog-filter__checkbox-group">
-                                <input class="catalog-filter__checkbox" id="voltageStabilizer"
-                                    name="category-voltageStabilizer" type="checkbox">
-                                <label class="catalog-filter__checkbox-label" for="voltageStabilizer">Стабилизатор
-                                    напряжения</label>
-                            </fieldset>
-                            <fieldset class="catalog-filter__checkbox-group">
-                                <input class="catalog-filter__checkbox" id="batteries" name="category-batteries"
-                                    type="checkbox">
-                                <label class="catalog-filter__checkbox-label" for="batteries">Батареи</label>
-                            </fieldset>
-                            <fieldset class="catalog-filter__checkbox-group">
-                                <input class="catalog-filter__checkbox" id="software" name="category-software"
-                                    type="checkbox">
-                                <label class="catalog-filter__checkbox-label" for="software">Программное
-                                    обеспечение</label>
-                            </fieldset>
-                            <fieldset class="catalog-filter__checkbox-group">
-                                <input class="catalog-filter__checkbox" id="technology" name="category-technology"
-                                    type="checkbox">
-                                <label class="catalog-filter__checkbox-label" for="technology">Технологии</label>
-                            </fieldset>
-                        </div>
-                        <div class="catalog-filter__manufacturer">
-                            <p class="catalog-filter__title">Производитель</p>
-                            <fieldset class="catalog-filter__checkbox-group">
-                                <input class="catalog-filter__checkbox" id="cyberPower" name="manufacturer-cyberPower"
-                                    type="checkbox">
-                                <label class="catalog-filter__checkbox-label" for="cyberPower">CyberPower</label>
-                            </fieldset>
-                            <fieldset class="catalog-filter__checkbox-group">
-                                <input class="catalog-filter__checkbox" id="atlanta" name="manufacturer-atlanta"
-                                    type="checkbox">
-                                <label class="catalog-filter__checkbox-label" for="atlanta">Atlanta</label>
-                            </fieldset>
-                            <fieldset class="catalog-filter__checkbox-group">
-                                <input class="catalog-filter__checkbox" id="megaladon" name="manufacturer-megaladon"
-                                    type="checkbox">
-                                <label class="catalog-filter__checkbox-label" for="megaladon">Megaladon</label>
-                            </fieldset>
-                            <fieldset class="catalog-filter__checkbox-group">
-                                <input class="catalog-filter__checkbox" id="goodCompany" name="manufacturer-goodCompany"
-                                    type="checkbox">
-                                <label class="catalog-filter__checkbox-label" for="goodCompany">Very good
-                                    company</label>
-                            </fieldset>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h1 class="catalog__title">Каталог</h1>
-                    <div class="catalog-filter__btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M20 5C20 4.44772 19.5523 4 19 4H5C4.44772 4 4 4.44772 4 5V6.58579C4 6.851 4.10536 7.10536 4.29289 7.29289L8.7071 11.7071C8.89464 11.8946 8.99999 12.149 8.99999 12.4142V19.3063C8.99999 19.6476 9.33434 19.8886 9.65811 19.7806L14.6581 18.114C14.8623 18.0459 15 17.8548 15 17.6396V12.4142C15 12.149 15.1054 11.8946 15.2929 11.7071L19.7071 7.29289C19.8946 7.10536 20 6.851 20 6.58579V5Z"
-                                fill="#7E869E" fill-opacity="0.25" />
-                            <path
-                                d="M9.65811 19.7806L9.84784 20.3498H9.84784L9.65811 19.7806ZM14.6581 18.114L14.8478 18.6832H14.8478L14.6581 18.114ZM19.7071 7.29289L20.1314 7.71716L19.7071 7.29289ZM15.2929 11.7071L14.8686 11.2828L15.2929 11.7071ZM5 4.6H19V3.4H5V4.6ZM4.6 6.58579V5H3.4V6.58579H4.6ZM9.13136 11.2828L4.71716 6.86863L3.86863 7.71716L8.28284 12.1314L9.13136 11.2828ZM8.39999 12.4142V19.3063H9.59999V12.4142H8.39999ZM8.39999 19.3063C8.39999 20.0571 9.13556 20.5873 9.84784 20.3498L9.46837 19.2114C9.53312 19.1898 9.59999 19.238 9.59999 19.3063H8.39999ZM9.84784 20.3498L14.8478 18.6832L14.4684 17.5448L9.46837 19.2114L9.84784 20.3498ZM14.8478 18.6832C15.297 18.5335 15.6 18.1131 15.6 17.6396H14.4C14.4 17.5966 14.4275 17.5584 14.4684 17.5448L14.8478 18.6832ZM15.6 17.6396V12.4142H14.4V17.6396H15.6ZM19.2828 6.86863L14.8686 11.2828L15.7172 12.1314L20.1314 7.71716L19.2828 6.86863ZM19.4 5V6.58579H20.6V5H19.4ZM20.1314 7.71716C20.4314 7.4171 20.6 7.01013 20.6 6.58579H19.4C19.4 6.69187 19.3579 6.79361 19.2828 6.86863L20.1314 7.71716ZM15.6 12.4142C15.6 12.3081 15.6421 12.2064 15.7172 12.1314L14.8686 11.2828C14.5686 11.5829 14.4 11.9899 14.4 12.4142H15.6ZM8.28284 12.1314C8.35785 12.2064 8.39999 12.3081 8.39999 12.4142H9.59999C9.59999 11.9899 9.43142 11.5829 9.13136 11.2828L8.28284 12.1314ZM3.4 6.58579C3.4 7.01013 3.56857 7.4171 3.86863 7.71716L4.71716 6.86863C4.64214 6.79361 4.6 6.69187 4.6 6.58579H3.4ZM19 4.6C19.2209 4.6 19.4 4.77909 19.4 5H20.6C20.6 4.11634 19.8837 3.4 19 3.4V4.6ZM5 3.4C4.11634 3.4 3.4 4.11634 3.4 5H4.6C4.6 4.77909 4.77909 4.6 5 4.6V3.4Z"
-                                fill="#1F2324" />
-                        </svg>
-                        <p class="catalog-filter__text">Фильтр</p>
-                    </div>
-                    <ul class="catalog__items">
-                    </ul>
-                </div>
-            </div>
-    
-            <div class="catalog__btn-show">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M11.7187 1.87964C10.3905 1.1454 8.85964 0.862697 7.3568 1.07414C5.85912 1.28485 4.47012 1.97494 3.39758 3.04089L2 4.35443V2.99976C2 2.44747 1.55228 1.99976 1 1.99976C0.447715 1.99976 0 2.44747 0 2.99976L7.68978e-09 6.66683L0 6.99976C0 7.55204 0.447715 7.99976 1 7.99976H5C5.55228 7.99976 6 7.55204 6 6.99976C6 6.44747 5.55228 5.99976 5 5.99976H3.16972L4.77786 4.48832C4.78518 4.48144 4.7924 4.47445 4.79951 4.46735C5.56669 3.70147 6.56198 3.20566 7.63544 3.05463C8.7089 2.9036 9.80237 3.10553 10.7511 3.62999C11.6998 4.15445 12.4524 4.97304 12.8954 5.9624C13.3385 6.95177 13.4479 8.05832 13.2074 9.11532C12.9669 10.1723 12.3893 11.1225 11.5618 11.8228C10.7343 12.523 9.70159 12.9353 8.61935 12.9976C7.53711 13.0599 6.46394 12.7688 5.56154 12.1681C4.65914 11.5674 3.9764 10.6898 3.61618 9.66735C3.43266 9.14644 2.86161 8.87294 2.34071 9.05647C1.81981 9.23999 1.54631 9.81104 1.72983 10.3319C2.23413 11.7633 3.18998 12.9921 4.45334 13.833C5.7167 14.6739 7.21914 15.0815 8.73427 14.9943C10.2494 14.9071 11.6952 14.3298 12.8537 13.3495C14.0122 12.3692 14.8208 11.0389 15.1576 9.55911C15.4943 8.0793 15.341 6.53013 14.7208 5.14501C14.1005 3.7599 13.0469 2.61389 11.7187 1.87964Z"
-                        fill="#062856" />
-                </svg>
-                <p class="catalog__btn-text">Показать еще</p>
-            </div>
-        </div>
-    </section>
-</template>
-    <template id="product">
-    <section class="product">
-        <div class="container">
-            <div class="breadcrumbs product__breadcrumbs">
-                <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a>
-                    </li>
-                    <li class="breadcrumbs__item"><a href="catalog.html" class="breadcrumbs__link">Каталог</a>
-                    </li>
-                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__product-name"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="product__wrapper">
-                <h1 class="product__name"></h1>
-                <div class="product__content">
-                    <div class="product__swiper swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide product__img-wrapper">
-                                <div class="product__labels item-labels">
-                                </div>
-                                <picture><source srcset="#" type="image/webp"><img class="product__img" src="#" alt="фото товара"></picture>
-                            </div>
-                            <div class="swiper-slide product__img-wrapper">
-                                <picture><source srcset="#" type="image/webp"><img class="product__img" src="#" alt="фото товара"></picture>
-                            </div>
-                            <div class="swiper-slide product__img-wrapper">
-                                <picture><source srcset="#" type="image/webp"><img class="product__img" src="#" alt="фото товара"></picture>
-                            </div>
-                        </div>
-                        <div class="product__thumbs-swiper swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide product__img-thumbs-wrapper">
-                                    <picture><source srcset="#" type="image/webp"><img class="product__img-thumbs" src="#" alt="фото товара"></picture>
-                                </div>
-                                <div class="swiper-slide product__img-thumbs-wrapper">
-                                    <picture><source srcset="#" type="image/webp"><img class="product__img-thumbs" src="#" alt="фото товара"></picture>
-                                </div>
-                                <div class="swiper-slide product__img-thumbs-wrapper">
-                                    <picture><source srcset="#" type="image/webp"><img class="product__img-thumbs" src="#" alt="фото товара"></picture>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="product__code">Артикул: <b></b></p>
-                        <div class="product__description">
-                            <p class="product__watts">Watts <span class="product__description-value">360</span>
-                            </p>
-                            <p class="product__voltage">Выходное напряжение ( В перем. ) <span
-                                    class="product__description-value">230 ± 10%</span></p>
-                            <p class="product__time">Время работы при 90Вт ( мин ) <span
-                                    class="product__description-value">18</span></p>
-                            <p class="product__connectors">Выходные разъемы <span
-                                    class="product__description-value">Schuko x 3</span></p>
-                        </div>
-
-                        <div class="product__price">
-                            <p class="catalog-item__current-price"></p>
-                            <p class="catalog-item__old-price"></p>
-                            <p class="product__discount"></p>
-                        </div>
-                        <div class="product__buttons">
-                            <a class="product__add-to-cart btn" href="cart.html">Купить</a>
-                            <button class="product__quick-order quick-order-btn">Быстрый заказ</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-tabs__wrapper tabs__wrapper">
-                    <div class="product-tabs__btns tabs__btns">
-                        <button
-                            class="product-tabs__btn product-tabs__btn-characteristics product-tabs__btn--active tabs__btn"
-                            data-tab-btn-number="1">Характеристики</button>
-                        <button class="product-tabs__btn product-tabs__btn-documentation tabs__btn"
-                            data-tab-btn-number="2">Документация</button>
-                    </div>
-                    <div class="product-tabs__items tabs__items">
-                        <div class="product-tabs__item tabs__tab-item" data-tab-content-number="1">
-                            <table class="product__characteristics">
-                                <tr class="product__characteristics-row">
-                                    <td>Производитель</td>
-                                    <td class="product__manufacturer-value"></td>
-                                </tr>
-                                <tr class="product__characteristics-row">
-                                    <td>Страна производства</td>
-                                    <td>Тайвань</td>
-                                </tr>
-                                <tr class="product__characteristics-row">
-                                    <td>Мощность выход</td>
-                                    <td>340 W</td>
-                                </tr>
-                                <tr class="product__characteristics-row">
-                                    <td>Напряжение вход/выход</td>
-                                    <td>220 V</td>
-                                </tr>
-                                <tr class="product__characteristics-row">
-                                    <td>Количество фаз вход/выход</td>
-                                    <td>3</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="product-tabs__item tabs__tab-item" data-tab-content-number="2">
-                            <div class="product__documentation">
-                                <a class="product__documentation-link" href="img/favicon.svg" download>
-                                    <svg class="product__documentation-icon" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="5" y="4" width="14" height="17" rx="2" fill="#7E869E"
-                                            fill-opacity="0.25" stroke="#1F2324" stroke-width="1.2" />
-                                        <path d="M9 9H15" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
-                                        <path d="M9 13H15" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
-                                        <path d="M9 17H13" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
-                                    </svg>
-                                    <p class="product__documentation-name">Документ.pdf</p>
-                                </a>
-                                <a class="product__documentation-link" href="img/favicon.svg" download>
-                                    <svg class="product__documentation-icon" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="5" y="4" width="14" height="17" rx="2" fill="#7E869E"
-                                            fill-opacity="0.25" stroke="#1F2324" stroke-width="1.2" />
-                                        <path d="M9 9H15" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
-                                        <path d="M9 13H15" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
-                                        <path d="M9 17H13" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
-                                    </svg>
-                                    <p class="product__documentation-name">Документ2. docx</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</template>
-    <script src="../js/app.min.js?_v=20221202150531"></script>
+    <script src="../js/app.min.js"></script>
 </body>
 
 </html>
