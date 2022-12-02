@@ -1,0 +1,23 @@
+@include laptop {
+    
+    .registration {
+        &__content {
+            width: auto;
+            padding: 45px 60px 40px;
+        }
+
+        &-tabs__wrapper {
+            max-width: 596px;
+        }
+
+        &__input-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px 28px;
+        }
+
+        &__input-group {
+            width: 284px;
+        }
+    }
+}

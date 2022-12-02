@@ -1,0 +1,31 @@
+.certificates {
+    padding: 14px 0 47px;
+
+    &__bread-crumbs {
+        margin-bottom: 7px;
+    }
+
+    &__title {
+        @include font(36px, 44px, false, 400);
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        @include font(14px, 17px);
+        margin-bottom: 22px;
+    }
+
+    &__requisites {
+        @include font(14px, 17px, var(--accent-color), 400);
+        text-decoration-line: underline;
+    }
+
+    &__items {
+        @include flexbox(center, false, 45px, false, wrap);
+        margin-top: 54px;
+    }
+
+    &__item {
+        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.1));
+    }
+}

@@ -1,0 +1,81 @@
+.quickOrder {
+    &__content {
+        width: 380px;
+        padding: 46px 15px 40px;
+    }
+
+    &__title {
+        @include font(32px, 39px, false, 500);
+        margin-bottom: 18px;
+    }
+
+    &__form {
+        @include flexbox(false, false, 20px, column);
+    }
+
+    &__input-group {
+        @include flexbox(false, false, 12px, column);
+    }
+
+    &__label {
+        @include font(12px, 15px, false, 500);
+    }
+
+    &__input,
+    &__textarea {
+        height: 45px;
+        width: 100%;
+        border: 1px solid var(--bg-color-2);
+        @include font(12px, 15px, false, 500);
+        padding-left: 20px;
+
+
+        &::placeholder {
+            color: var(--text-color-second);
+        }
+    }
+
+    &__textarea {
+        height: 81px;
+        font-family: 'Montserrat';
+        padding-top: 15px;
+        resize: none;
+    }
+
+    &__file {
+        @include flexbox(false, center, 12px);
+        margin-top: 5px;
+    }
+
+
+    &__addFile {
+        @include font(14px, 17px, var(--accent-color), 400);
+        text-decoration-line: underline;
+        text-align: left;
+        margin-top: 3px;
+        margin-bottom: 14px;
+    }
+
+    &__checkbox-group {
+        @include flexbox(false, false, 10px);
+        margin-bottom: 10px;
+    }
+
+    &__checkbox {
+        width: 12px;
+        height: 12px;
+        border: 1px solid var(--text-color-second);
+    }
+
+    &__checkbox-label {
+        max-width: 288px;
+        @include font(12px, 11px, var(--text-color-second), 400);
+    }
+
+    &__submit {
+        padding: 15px 15px;
+        max-width: 201px;
+        font-size: 14px;
+    }
+
+}

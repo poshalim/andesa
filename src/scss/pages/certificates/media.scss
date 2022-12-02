@@ -1,0 +1,33 @@
+@include laptop {
+    .certificates {
+        padding: 33px 0 117px;
+
+        &__bread-crumbs {
+            margin-bottom: 26px;
+        }
+
+        &__title {
+            @include font(40px, 49px);
+            margin-bottom: 36px;
+        }
+
+        &__text {
+            max-width: 970px;
+            margin-bottom: 29px;
+        }
+
+        &__items {
+            gap: 30px;
+            margin-top: 42px;
+        }
+
+        &__item {
+            max-width: 283px;
+        }
+
+        &__item-img {
+            width: 100%;
+        }
+
+    }
+}

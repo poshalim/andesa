@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../layouts/head.html', {
+"title": "Сертификаты",
+"style": "certificates"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('../layouts/header.html', {})
+        <main class="main">
+            <section class="certificates">
+                <div class="container">
+                    <div class="breadcrumbs certificates__bread-crumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Сертификаты</a></li>
+                        </ul>
+                    </div>
+                    <h1 class="certificates__title">Сертификаты</h1>
+                    <p class="certificates__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                        consectetur
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna</p>
+                    <a class="certificates__requisites" href="@img/favicon.svg" download>Скачать реквизиты >></a>
+                    <ul class="certificates__items">
+                        <li class="certificates__item">
+                            <img class="certificates__item-img" src="@img/certificates/certificate-1.png"
+                                alt="сертификат">
+                        </li>
+                        <li class="certificates__item">
+                            <img class="certificates__item-img" src="@img/certificates/certificate-2.png"
+                                alt="сертификат">
+                        </li>
+                        <li class="certificates__item">
+                            <img class="certificates__item-img" src="@img/certificates/certificate-1.png"
+                                alt="сертификат">
+                        </li>
+                        <li class="certificates__item">
+                            <img class="certificates__item-img" src="@img/certificates/certificate-1.png"
+                                alt="сертификат">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        @@include('../layouts/footer.html', {})
+    </div>
+
+    <script src="../js/app.min.js"></script>
+</body>
+
+</html>

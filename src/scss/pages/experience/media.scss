@@ -1,0 +1,50 @@
+@include laptop {
+    .experience {
+        padding: 32px 0 100px;
+
+        &__breadcrumbs {
+            margin-bottom: 26px;
+        }
+
+        &__items {
+            gap: 42px;
+        }
+
+        &__item {
+            @include flexbox(false, false, 63px);
+            padding: 33px 50px 40px 62px;
+            position: relative;
+        }
+
+        &__item--open {
+            padding-bottom: 56px;
+        }
+
+        &-item__logo {
+            width: 162px;
+            height: 61px;
+            float: none;
+            margin: 29px 0 0;
+        }
+
+        &-item__name {
+            margin-top: 0;
+            margin-bottom: 21px;
+        }
+
+        &-item__description {
+            margin: 0;
+        }
+
+        &-item__btn-show {
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+            margin: 0;
+        }
+
+        &__file {
+            margin: 33px 0 0;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+@include laptop {
+    .footer {
+
+        &__content {
+            padding: 83px 0 95px;
+        }
+
+        &__wrapper {
+            @include flexbox(false, false, false, false, wrap);
+        }
+
+        &__logo-link {
+            margin: 0;
+        }
+
+        &__items {
+            margin: 14px 0 0 140px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 32px 100px;
+            width: 651px;
+        }
+
+        &__item {
+            min-width: 170px;
+            text-align: left;
+        }
+
+        &__data-container {
+            margin-left: auto;
+            margin-top: 14px;
+        }
+
+        &__call {
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
+
+        &__address {
+            max-width: 170px;
+            margin-bottom: 22px;
+        }
+
+        &__politics {
+            font-weight: 500;
+            position: static;
+            margin: 0;
+            transform: translateX(0);
+        }
+
+        &__socials {
+            gap: 43px;
+            margin: 0;
+            position: absolute;
+            top: 83px;
+            left: 0;
+        }
+
+        &__rights {
+            margin: 0;
+            position: absolute;
+            top: 133px;
+            left: 0;
+            max-width: 120px;
+            text-align: start;
+        }
+    }
+
+}

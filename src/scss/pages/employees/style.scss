@@ -1,0 +1,45 @@
+.employees {
+    padding: 14px 0 48px;
+
+    &__bread-crumbs {
+        margin-bottom: 7px;
+    }
+
+    &__title {
+        @include font(36px, 44px, false, 400);
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        @include font(14px, 17px);
+        margin-bottom: 46px;
+    }
+
+    &__items {
+        @include flexbox(false, false, 47px, column);
+    }
+
+    &__item-top {
+        @include flexbox(false, center, 20px);
+        margin-bottom: 14px;
+    }
+
+    &__item-photo {
+        width: 77px;
+        height: 79px;
+        border-radius: 5px;
+    }
+
+    &__author-name {
+        @include font(16px, 20px, #000, 500);
+        margin-bottom: 10px;
+    }
+
+    &__author-position {
+        @include font(14px, 17px, var(--text-color-second));
+    }
+
+    &__item-text {
+        @include font(14px, 17px);
+    }
+}

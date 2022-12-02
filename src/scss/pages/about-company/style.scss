@@ -1,0 +1,29 @@
+.about-company {
+    max-width: 1920px;
+    margin: 0 auto;
+
+    &__content {
+        background: linear-gradient(58.7deg, rgba(0, 0, 0, 0.5) 44.21%, rgba(0, 0, 0, 0) 108.12%), url('@img/about-company/bg.png') -190px -55px no-repeat, linear-gradient(91.8deg, var(--accent-color) 20.97%, #4877D0 40.73%, #4477D9 78.81%);
+        padding: 34px 0 88px;
+    }
+
+    &__bread-crumbs {
+        color: #D0D0D0;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        @include font(36px, 44px, #FFF, 400);
+        margin-bottom: 16px;
+    }
+
+    &__description {
+        @include font(14px, 24px, #FFF);
+    }
+
+    &__text {
+        @include font(14px, 17px, #000);
+        margin: 47px 0 46px;
+    }
+
+}

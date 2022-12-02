@@ -1,0 +1,44 @@
+.recovery {
+
+    &__content {
+        position: relative;
+        padding: 32px 15px 40px;
+    }
+
+    &__title {
+        @include font(32px, 39px, false, 500);
+        margin-bottom: 22px;
+    }
+
+    &__input-group {
+        @include flexbox(false, false, 12px, column);
+        margin-bottom: 16px;
+    }
+
+    &__label {
+        @include font(12px, 15px, false, 500);
+    }
+
+    &__input {
+        height: 45px;
+        border: 1px solid var(--bg-color-2);
+        @include font(12px, 15px, false, 500);
+        padding-left: 20px;
+
+        &::placeholder {
+            color: var(--text-color-second);
+        }
+    }
+
+    &__text {
+        max-width: 300px;
+        @include font(12px, 15px);
+        margin-bottom: 28px;
+    }
+
+    &__close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+}

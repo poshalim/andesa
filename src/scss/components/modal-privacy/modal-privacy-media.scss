@@ -1,0 +1,13 @@
+@include laptop {
+    .privacy {
+        &__content {
+            width: 1008px;
+            padding: 43px 30px 48px 60px;
+            @include flexbox(false, center, 45px);
+        }
+
+        &__link {
+            margin: 0;
+        }
+    }
+}

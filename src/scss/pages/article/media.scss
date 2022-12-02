@@ -1,0 +1,17 @@
+@include laptop {
+    .article {
+        padding: 34px 0 96px;
+
+        &__breadcrumbs {
+            margin-bottom: 24px;
+        }
+
+        &__subtitle {
+            margin-bottom: 40px;
+        }
+
+        &__img-container {
+            margin-bottom: 35px;
+        }
+    }
+}

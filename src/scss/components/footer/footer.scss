@@ -1,0 +1,82 @@
+.footer {
+    &__content {
+        padding: 45px 0 32px;
+        text-align: center;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__logo-link {
+        @include flexbox(false, center, false, column);
+    }
+
+    &__logo {
+        width: 137.99px;
+        height: 41.26px;
+        margin-bottom: 2px;
+    }
+
+    &__logo-text {
+        @include font(10px, 12px, var(--text-color-main), 500);
+    }
+
+    &__items {
+        @include flexbox(false, center, 21px, column);
+        @include font(14px, 17px, #000, 500);
+        margin: 40px 0 45px;
+    }
+
+    &__item {
+        @media(any-hover: hover) {
+            &:hover {
+                text-decoration-line: underline;
+            }
+        }
+    }
+
+    &__call {
+        @include font(16px, 20px, false, 500);
+        @extend %centered-flexbox;
+        gap: 6px;
+        margin-bottom: 32px;
+    }
+
+    &__address {
+        @include font(12px, 15px, var(--text-color-second), 500);
+        text-align: center;
+        margin-bottom: 14px;
+    }
+
+    &__email {
+        @include font(14px, 17px, #000);
+    }
+
+    &__politics {
+        font-weight: 400;
+        position: absolute;
+        min-width: 325px;
+        bottom: 66px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 29px;
+    }
+
+    &__socials {
+        @extend %centered-flexbox;
+        gap: 16px;
+        margin-top: 62px;
+    }
+
+    &__telegram,
+    &__whatsapp {
+        width: 20px;
+        height: 20px;
+    }
+
+    &__rights {
+        @include font(12px, 15px, false, 500);
+        margin-top: 11px;
+    }
+}

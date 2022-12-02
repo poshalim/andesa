@@ -1,0 +1,42 @@
+@include laptop {
+    .review {
+        padding: 31px 0 100px;
+
+        &__title {
+            @include font(40px, 49px);
+            margin-bottom: 38px;
+        }
+
+        &__doc {
+            width: 178px;
+            height: 268px;
+            margin-right: 30px;
+        }
+
+        &__company {
+            position: absolute;
+            top: 0;
+            left: 208px;
+            margin: 0;
+        }
+
+        &__company-logo {
+            margin: 0;
+        }
+
+        &__author {
+            margin-top: 31px;
+            left: 208px;
+            top: auto;
+            bottom: 0;
+            margin: 0;
+        }
+
+        &__text {
+            margin-top: 110px;
+            padding-left: 10px;
+            max-width: 905px;
+            padding-bottom: 78px;
+        }
+    }
+}

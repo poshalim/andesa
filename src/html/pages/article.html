@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../layouts/head.html', {
+"title": "Статья",
+"style": "article"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('../layouts/header.html', {})
+        <main class="main">
+            <section class="article">
+                <div class="container">
+                    <div class="breadcrumbs article__breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item"><a href="news.html" class="breadcrumbs__link">Новости</a>
+                            </li>
+                            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Заголовок новости</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <article>
+                        <h1 class="article__title">Заголовок новости</h1>
+                        <p class="article__date">21.10.2023</p>
+                        <h3 class="article__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet</h3>
+                        <div class="article__img-container">
+                            <img class="article__img" src="@img/article/1.jpg" alt="фото статьи">
+                        </div>
+                        <div class="article__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit
+                                amet,
+                                consectetur adipisicing elit, sed do
+                            </p>
+                            <br><br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit
+                                amet,
+                                consectetur adipisicing elit, sed do</p>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.Lorem ipsum dolor sit
+                                amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit
+                                amet, consectetur adipisicing elit, sed d</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        @@include('../layouts/footer.html', {})
+    </div>
+
+    <script src="../js/app.min.js"></script>
+</body>
+
+</html>

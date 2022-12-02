@@ -1,0 +1,90 @@
+.experience {
+    padding: 14px 0 51px;
+
+    &__breadcrumbs {
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        @include font(40px, 49px, false, 400);
+        margin-bottom: 31px;
+    }
+
+    &-tabs__btns {
+        @include flexbox(false, false, 1px);
+        border-bottom: 1px solid var(--bg-color-2);
+        margin-bottom: 38px;
+        overflow-x: auto;
+    }
+
+    &-tabs__btn {
+        background-color: var(--bg-color-2);
+        @include font(16px, 20px, false, 500);
+        padding: 11px 31px 10px;
+
+        &:first-child {
+            border-radius: 5px 0px 0px 0px;
+        }
+
+        &:last-child {
+            border-radius: 0px 5px 0px 0px;
+        }
+    }
+
+    &-tabs__btn--active {
+        background-color: var(--btn-bg-color);
+    }
+
+    &__items {
+        @include flexbox(false, false, 40px, column);
+    }
+
+    &__item {
+        border: 1px solid var(--bg-color-2);
+        padding: 24px 15px 29px;
+    }
+
+    &__item--open {
+        border: 1px solid #A4A4A4;
+        padding-bottom: 39px;
+    }
+
+    &-item__logo {
+        width: 133px;
+        height: 50px;
+        float: left;
+        margin-right: 24px;
+    }
+
+    &-item__text {
+        color: #000000;
+    }
+
+    &-item__name {
+        @include font(18px, 22px, false, 600);
+        margin-top: 2px;
+        margin-bottom: 31px;
+    }
+
+    &-item__description {
+        @include font(14px, 17px);
+        margin-left: 11px;
+    }
+
+    &-item__btn-show {
+        @include flexbox(false, center, 10px);
+        @include font(14px, 17px, var(--accent-color));
+        text-decoration-line: underline;
+        margin-top: 22px;
+        margin-left: 11px;
+    }
+
+    &__file {
+        @include flexbox(false, false, 12px);
+        margin-top: 36px;
+        margin-left: 13px;
+        margin-bottom: 37px;
+        @include font(16px, 20px, var(--accent-color), 500);
+        text-decoration-line: underline;
+    }
+}

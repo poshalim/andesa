@@ -1,0 +1,87 @@
+.order {
+    padding: 30px 0 46px;
+
+    &__number {
+        @include font(14px, 17px, false, 400);
+        margin-bottom: 21px;
+    }
+
+    &__subtitle {
+        @include font(16px, 20px, false, 500);
+        margin-bottom: 25px;
+    }
+
+    &__content {
+        @include flexbox(false, false, 21px);
+        overflow-x: auto;
+        margin-bottom: 42px;
+    }
+
+    &__column-names {
+        @include flexbox(false, false, 24px, column);
+        @include font(12px, 15px, false, 500);
+        padding-top: 7px;
+    }
+
+    &__column-name--short {
+        margin-bottom: 60px;
+    }
+
+    &__column-name--full,
+    &__column-amount--full {
+        display: none;
+    }
+
+    &__items {
+        @include flexbox(false, false, 20px);
+    }
+
+    &__item {
+        width: 216px;
+        @include flexbox(false, false, 22px, column);
+        padding: 10px 10px 22px;
+        border: 1px solid #DCDCDC;
+        @include font(14px, 17px, #000);
+    }
+
+    &__item-head {
+        @include flexbox(false, false, 20px);
+        margin-bottom: 13px;
+        word-break: break-all;
+    }
+
+    &-item__img {
+        width: 59px;
+        height: 59px;
+    }
+
+    &__description {
+        max-width: 200px;
+    }
+
+    &__files {
+        display: none;
+    }
+
+    &__sum {
+        @include flexbox(flex-end, false, 136px);
+        @include font(16px, 35px, false, 500);
+        margin-right: 49px;
+        margin-bottom: 24px;
+    }
+
+    &__sum-title {
+        color: var(--text-color-second);
+    }
+
+    &__sum-value {
+        color: #000000;
+        text-align: right;
+    }
+
+    &__total-sum {
+        @include font(18px, 22px, var(--accent-color), 600);
+        text-align: right;
+        margin-right: 50px;
+    }
+}

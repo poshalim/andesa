@@ -1,0 +1,29 @@
+.services {
+    padding: 0 0 48px;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    &__promo {
+        padding: 70px 0 225px;
+        background: linear-gradient(44.12deg, rgba(0, 0, 0, 0.6) 47.12%, rgba(0, 0, 0, 0) 74.91%), url('@img/services/bg.jpg') center center/cover no-repeat, linear-gradient(91.8deg, var(--accent-color) 20.97%, #4877D0 40.73%, #4477D9 78.81%);
+        margin-bottom: 42px;
+    }
+
+    &__title {
+        @include font(40px, 49px, #FFF, 400);
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        @include font(14px, 24px, #FFF);
+    }
+
+    &__subtitle {
+        @include font(32px, 39px, false, 500);
+        margin-bottom: 12px;
+    }
+
+    &__text {
+        @include font(14px, 17px, #000);
+    }
+}

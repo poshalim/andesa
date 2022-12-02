@@ -1,0 +1,69 @@
+@include laptop {
+    .news {
+        padding: 33px 0 103px;
+
+        &__breadcrumbs {
+            margin-bottom: 25px;
+        }
+
+        &__title {
+            margin-bottom: 32px;
+        }
+
+        &__items {
+            @include flexbox(false, false, 38px 30px, false, wrap);
+            margin-bottom: 42px;
+        }
+
+        &-item {
+            max-width: 283px;
+        }
+
+        &-item__head {
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 9px;
+        }
+
+        &-item__img {
+            width: 283px;
+            height: 238px;
+        }
+
+        &-item__date {
+            margin-bottom: 11px;
+        }
+
+        &__show-more {
+            display: none;
+        }
+
+        &__pagination {
+            @include flexbox(false, center, 22px);
+        }
+
+        &__pagination-pages {
+            @include flexbox(false, center, 19px);
+        }
+
+        &__pagination-page {
+            @include font(14px, 17px, #000, 500);
+        }
+
+        &__pagination-page--active {
+            color: var(--accent-color);
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 2px;
+                background-color: var(--accent-color);
+                bottom: -4px;
+                left: 0;
+            }
+        }
+
+    }
+}

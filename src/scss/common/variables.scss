@@ -1,0 +1,15 @@
+:root {
+    --text-color-main: #1F2324;
+    --btn-bg-color: #FFD230;
+    --text-color-second: #969696;
+    --accent-color: #1648A8;
+    --error-color: #E01C1C;
+    --bg-color: #F3F3F3;
+    --bg-color-2: #E5E5E5;
+}
+
+$breakpoints: (
+    md: 640px,
+    xl: 1260px,
+    xxl: 1670px,
+);

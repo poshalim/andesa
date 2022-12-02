@@ -1,0 +1,98 @@
+@include laptop {
+    .order {
+        padding: 58px 0 96px;
+
+        &__number {
+            @include font(16px, 20px, false, 500);
+            margin-top: 36px;
+            margin-bottom: 27px;
+        }
+
+        &__subtitle {
+            @include font(18px, 22px, false, 600);
+        }
+
+        &__content {
+            flex-direction: column;
+            gap: 24px;
+            overflow-x: visible;
+            margin-bottom: 38px;
+        }
+
+        &__column-names {
+            flex-direction: row;
+            gap: 125px;
+            background: var(--bg-color);
+            border-radius: 5px;
+            padding: 10px 31px 12px;
+        }
+
+        &__column-name--full {
+            display: block;
+            margin-right: 320px;
+        }
+
+        &__column-amount--full {
+            display: block;
+        }
+
+        &__column-name--short,
+        &__column-amount--short {
+            display: none;
+        }
+
+        &__items {
+            flex-direction: column;
+        }
+
+        &__item {
+            width: auto;
+            align-items: center;
+            flex-direction: row;
+            gap: 96px;
+            padding: 0 31px 21px;
+            border: none;
+            border-bottom: 1px dashed #DBDBDB;
+        }
+
+        &__item-head {
+            gap: 29px;
+            align-items: center;
+            margin: 0;
+            word-break: normal;
+        }
+
+        &-item__discount {
+            margin-left: 157px;
+
+        }
+
+        &-item__price {
+            margin-left: 24px;
+
+        }
+
+        &-item__item-sum {
+            margin-left: 64px;
+        }
+
+        &__files {
+            @include flexbox(false, center, 47px);
+        }
+
+        &__file {
+            @include flexbox(false, center, 9px);
+            @include font(12px, 15px, var(--accent-color), 500);
+        }
+
+        &__sum {
+            gap: 136px;
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+
+        &__total-sum {
+            margin-right: 0;
+        }
+    }
+}

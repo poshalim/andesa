@@ -1,0 +1,118 @@
+@include laptop {
+    .cartPage {
+        padding: 33px 0 100px;
+
+        &__breadcrumbs {
+            margin-bottom: 24px;
+        }
+
+        &__title {
+            @include font(40px, 49px);
+            margin-bottom: 30px;
+        }
+
+        &__items-head {
+            @include flexbox(false, center);
+            height: 37px;
+            background-color: var(--bg-color);
+            border-radius: 5px;
+            @include font(12px, 15px, false, 500);
+            margin-bottom: 28px;
+            padding-left: 32px;
+        }
+
+        &__content--empty {
+            margin: 100px 0 10px;
+        }
+
+        &-items__name {
+            margin-right: 495px;
+        }
+
+        &-items__code {
+            margin-right: 123px;
+        }
+
+        &-items__price {
+            margin-right: 84px;
+        }
+
+        &-items__amount {
+            margin-right: 65px;
+        }
+
+
+        &__items {
+            gap: 29px;
+        }
+
+        &-item {
+            gap: 31px;
+            align-items: center;
+
+            &:not(:last-child) {
+                padding-bottom: 30px;
+            }
+        }
+
+        &-item__img {
+            margin: 0;
+            height: 59px;
+            width: 59px;
+        }
+
+        &-item__info {
+            @include flexbox(false, center, 30px);
+        }
+
+        &-item__code {
+            margin: 0;
+        }
+
+        &-item__description {
+            margin: 0;
+        }
+
+        &-item__description--big {
+            display: block;
+            order: -1;
+            max-width: 507px;
+        }
+
+        &-item__description--small {
+            display: none;
+        }
+
+        &-item__price {
+            display: block;
+            @include font(14px, 17px, #000);
+            margin-left: 88px;
+            width: 80px;
+        }
+
+        &-item__footer {
+            gap: 52px;
+        }
+
+        &-item__amount {
+            margin-left: 11px;
+            width: 87px;
+            justify-content: space-between;
+        }
+
+        &-item__remove-from-cart {
+            position: static;
+            margin-left: 10px;
+            height: 24px;
+            width: 24px;
+        }
+
+        &-item__total-sum {
+            margin-top: 26px;
+        }
+
+        &-item__buttons {
+            justify-content: flex-end;
+        }
+    }
+}

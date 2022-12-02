@@ -1,0 +1,33 @@
+@include tablet {
+    .about-company {
+        &__content {
+            background: linear-gradient(58.7deg, rgba(0, 0, 0, 0.5) 44.21%, rgba(0, 0, 0, 0) 108.12%), url('@img/about-company/bg.png') center center/cover no-repeat, linear-gradient(91.8deg, var(--accent-color) 20.97%, #4877D0 40.73%, #4477D9 78.81%);
+        }
+    }
+}
+
+@include laptop {
+    .about-company {
+        &__content {
+            background: linear-gradient(94.69deg, rgba(0, 0, 0, 0.5) 36.19%, rgba(0, 0, 0, 0) 56.57%), url('@img/about-company/bg-1920.jpg') center center/cover no-repeat, linear-gradient(91.8deg, var(--accent-color) 20.97%, #4877D0 40.73%, #4477D9 78.81%);
+            padding: 37px 0 118px;
+        }
+
+        &__bread-crumbs {
+            margin-bottom: 60px;
+        }
+
+        &__title {
+            @include font(40px, 49px);
+            margin-bottom: 30px;
+        }
+
+        &__description {
+            max-width: 625px;
+        }
+
+        &__text {
+            margin: 103px 0 97px;
+        }
+    }
+}

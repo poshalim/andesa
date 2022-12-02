@@ -1,0 +1,13 @@
+@include laptop {
+    .error {
+        &__code {
+            @include font(224px, 273px);
+            margin-bottom: -12px;
+        }
+
+        &__title {
+            @include font(32px, 39px);
+            margin-bottom: 14px;
+        }
+    }
+}

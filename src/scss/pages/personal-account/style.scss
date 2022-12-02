@@ -1,0 +1,127 @@
+.personal-account {
+    padding: 31px 0 26px;
+
+    &__title {
+        @include font(32px, 39px, false, 500);
+        margin-bottom: 22px;
+    }
+
+    &__head {
+        margin-bottom: 49px;
+    }
+
+    &-tabs__btns {
+        display: inline-flex;
+        box-shadow: inset 0px 2px 1px rgba(0, 0, 0, 0.13);
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 27px;
+    }
+
+    &-tabs__btn {
+        background-color: var(--bg-color);
+        @include font(14px, 17px);
+        padding: 7px 19px 9px;
+    }
+
+    &-tabs__btn--active {
+        background-color: #42516F;
+        color: #FFFFFF;
+    }
+
+    &__choice {
+        @include flexbox(false, center, 45px);
+    }
+
+    &__choice-date {
+        @include flexbox(false, center, 13px);
+    }
+
+    &__filter-date {
+        @include flexbox(false, center, 15px);
+        @include font(12px, 15px, false, 500);
+    }
+
+    &__choice-status {
+        @include flexbox(false, center, 11px);
+    }
+
+    &__filter-status {
+        @include font(12px, 15px, #05AC02, 500);
+    }
+
+    &__items {
+        @include flexbox(false, false, 22px, column);
+    }
+
+    &__item {
+        padding: 0 0 22px;
+
+        &:not(:last-child) {
+            border-bottom: 1px dashed var(--text-color-second);
+        }
+    }
+
+    &-item__number {
+        @include font(14px, 17px, #000);
+        margin-bottom: 13px;
+    }
+
+    &-item__status {
+        @include font(12px, 15px, false, 500);
+        margin-bottom: 12px;
+    }
+
+    &-item__status--success {
+        color: #05AC02;
+    }
+
+    &-item__status--pending {
+        color: #0283AC;
+    }
+
+    &-item__status--processing {
+        color: #AC8702;
+    }
+
+    &-item__status--delivering {
+        color: #AC0202;
+    }
+
+    &-item__footer {
+        @include flexbox(false, center, 142px);
+    }
+
+    &-item__date {
+        @include font(14px, 17px);
+    }
+
+    &-item__sum {
+        @include font(16px, 20px, false, 500);
+    }
+}
+
+.profile {
+    &__btn-change {
+        @include font(14px, 17px, var(--accent-color), 400);
+        text-decoration-line: underline;
+        display: block;
+        margin-top: -39px;
+        margin-bottom: 35px;
+    }
+
+    &__data {
+        @include flexbox(false, false, 31px, column);
+        padding-bottom: 10px;
+    }
+
+    &__label {
+        @include font(14px, 17px);
+        margin-bottom: 5px;
+    }
+
+    &__value {
+        @include font(16px, 20px, false, 500);
+    }
+
+}

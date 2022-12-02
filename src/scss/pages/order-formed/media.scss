@@ -1,0 +1,18 @@
+@include laptop {
+    .order-formed {
+        padding: 66px 0 100px;
+
+        &__icon {
+            margin-bottom: 37px;
+        }
+
+        &__title {
+            margin-bottom: 31px;
+        }
+
+        &__text {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+    }
+}

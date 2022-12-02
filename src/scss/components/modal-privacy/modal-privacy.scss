@@ -1,0 +1,18 @@
+.privacy {
+
+    &__content {
+        width: 320px;
+        padding: 30px 33px 35px;
+    }
+
+    &__text {
+        @include font(16px, 20px, false, 500);
+    }
+
+    &__link {
+        display: block;
+        @include font(16px, 20px, #B8B8B8, 500);
+        text-decoration-line: underline;
+        margin-bottom: 25px;
+    }
+}

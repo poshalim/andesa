@@ -1,0 +1,154 @@
+@include laptop {
+
+    // ------ PROMO ----- //
+
+    .promo {
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 127px 0 175px;
+        background: linear-gradient(94.69deg, rgba(0, 0, 0, 0.5) 36.19%, rgba(0, 0, 0, 0) 56.57%), url('@img/header/header-content-img.jpg') center center/cover no-repeat, linear-gradient(91.8deg, var(--accent-color) 20.97%, #4877D0 40.73%, #4477D9 78.81%);
+
+        &__title {
+            @include font(40px, 49px, #FFF, 400);
+            margin-bottom: 31px;
+        }
+
+        &__text {
+            margin-bottom: 50px;
+            max-width: 563px;
+
+            &--short {
+                display: none;
+            }
+
+            &--full {
+                display: block;
+            }
+        }
+    }
+
+    // ------ /PROMO ----- //
+
+
+    // ------ ABOUT COMPANY ----- //
+
+    .about-company-box {
+        padding: 91px 0 90px;
+
+        &__title {
+            margin-bottom: 24px;
+        }
+
+        &__text {
+            margin-bottom: 115px;
+        }
+    }
+
+    // ------ /ABOUT COMPANY ----- //
+
+
+    // ------ CATALOG ----- //
+
+    .catalog-box {
+        &__title {
+            margin-bottom: 29px;
+        }
+
+        &__items {
+            padding-bottom: 94px;
+        }
+    }
+
+    // ------ /CATALOG ----- //
+
+
+    // ------ EQUIPMENT SELECTION ----- //
+
+    .equipment-selection {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 225px;
+            left: 71%;
+            background: url('@img/equipment-selection/bg-1.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 326px;
+            height: 415px;
+            z-index: -1;
+        }
+
+        &__title {
+            padding-top: 90px;
+            margin-bottom: 28px;
+        }
+
+        &__form {
+            gap: 21px;
+        }
+
+        &__equipment-type {
+            gap: 76px;
+            margin-bottom: 21px;
+        }
+
+        &__container {
+            &:not(:last-child) .equipment-selection__type::after {
+                left: 67px;
+                top: 12px;
+            }
+        }
+
+        &__input-container {
+            gap: 23px 29px;
+        }
+
+        &__input-group {
+            width: 285px;
+        }
+
+        &__btn {
+            margin-top: 12px;
+            max-width: 204px;
+        }
+    }
+
+    // ------ /EQUIPMENT SELECTION ----- //
+
+    // ------ PARTNERS ----- //
+
+    .partners {
+        padding: 137px 0 100px;
+
+        &__title {
+            margin-bottom: 29px;
+        }
+
+        &__list {
+            gap: 30px 48px;
+        }
+
+        &__item {
+            width: 162px;
+            height: 61px;
+        }
+    }
+
+    // ------ /PARTNERS ----- //
+}
+
+
+
+@include desktop {
+    .equipment-selection::after {
+        top: 128px;
+        left: 69%;
+        width: 500px;
+    }
+
+    .promo {
+        background: linear-gradient(94.69deg, rgba(0, 0, 0, 0.5) 36.19%, rgba(0, 0, 0, 0) 56.57%), url('@img/header/header-content-img.jpg') center -295px/cover no-repeat, linear-gradient(91.8deg, var(--accent-color) 20.97%, #4877D0 40.73%, #4477D9 78.81%);
+    }
+}

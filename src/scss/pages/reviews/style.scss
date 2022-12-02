@@ -1,0 +1,55 @@
+.reviews {
+    padding: 14px 0 60px;
+
+    &__bread-crumbs {
+        margin-bottom: 7px;
+    }
+
+    &__title {
+        @include font(36px, 44px, false, 400);
+        margin-bottom: 20px;
+    }
+
+    &__items {
+        @include flexbox(center, false, 20px, false, wrap);
+    }
+
+    &__item {
+        border: 1px dashed var(--text-color-second);
+        border-radius: 5px;
+        padding: 16px 12px 27px;
+        max-width: 350px;
+        position: relative;
+    }
+
+    &__company-logo {
+        width: 117px;
+        height: 44px;
+        margin-bottom: 9px;
+    }
+
+    &__company-name {
+        @include font(16px, 20px, false, 500);
+        position: absolute;
+        top: 27px;
+        left: 143px;
+    }
+
+    &__text {
+        @include font(14px, 17px);
+        padding-left: 9px;
+        margin-bottom: 20px;
+    }
+
+    &__author {
+        padding-left: 9px;
+    }
+
+    &__author-position {
+        @include font(14px, 17px, var(--text-color-second));
+    }
+
+    &__author-name {
+        @include font(16px, 20px, #000, 500);
+    }
+}

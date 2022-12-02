@@ -1,0 +1,133 @@
+<template id="product">
+    <section class="product">
+        <div class="container">
+            <div class="breadcrumbs product__breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item"><a href="catalog.html" class="breadcrumbs__link">Каталог</a>
+                    </li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__product-name"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="product__wrapper">
+                <h1 class="product__name"></h1>
+                <div class="product__content">
+                    <div class="product__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide product__img-wrapper">
+                                <div class="product__labels item-labels">
+                                </div>
+                                <img class="product__img" src="#" alt="фото товара">
+                            </div>
+                            <div class="swiper-slide product__img-wrapper">
+                                <img class="product__img" src="#" alt="фото товара">
+                            </div>
+                            <div class="swiper-slide product__img-wrapper">
+                                <img class="product__img" src="#" alt="фото товара">
+                            </div>
+                        </div>
+                        <div class="product__thumbs-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide product__img-thumbs-wrapper">
+                                    <img class="product__img-thumbs" src="#" alt="фото товара">
+                                </div>
+                                <div class="swiper-slide product__img-thumbs-wrapper">
+                                    <img class="product__img-thumbs" src="#" alt="фото товара">
+                                </div>
+                                <div class="swiper-slide product__img-thumbs-wrapper">
+                                    <img class="product__img-thumbs" src="#" alt="фото товара">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="product__code">Артикул: <b></b></p>
+                        <div class="product__description">
+                            <p class="product__watts">Watts <span class="product__description-value">360</span>
+                            </p>
+                            <p class="product__voltage">Выходное напряжение ( В перем. ) <span
+                                    class="product__description-value">230 ± 10%</span></p>
+                            <p class="product__time">Время работы при 90Вт ( мин ) <span
+                                    class="product__description-value">18</span></p>
+                            <p class="product__connectors">Выходные разъемы <span
+                                    class="product__description-value">Schuko x 3</span></p>
+                        </div>
+
+                        <div class="product__price">
+                            <p class="catalog-item__current-price"></p>
+                            <p class="catalog-item__old-price"></p>
+                            <p class="product__discount"></p>
+                        </div>
+                        <div class="product__buttons">
+                            <a class="product__add-to-cart btn" href="cart.html">Купить</a>
+                            <button class="product__quick-order quick-order-btn">Быстрый заказ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-tabs__wrapper tabs__wrapper">
+                    <div class="product-tabs__btns tabs__btns">
+                        <button
+                            class="product-tabs__btn product-tabs__btn-characteristics product-tabs__btn--active tabs__btn"
+                            data-tab-btn-number="1">Характеристики</button>
+                        <button class="product-tabs__btn product-tabs__btn-documentation tabs__btn"
+                            data-tab-btn-number="2">Документация</button>
+                    </div>
+                    <div class="product-tabs__items tabs__items">
+                        <div class="product-tabs__item tabs__tab-item" data-tab-content-number="1">
+                            <table class="product__characteristics">
+                                <tr class="product__characteristics-row">
+                                    <td>Производитель</td>
+                                    <td class="product__manufacturer-value"></td>
+                                </tr>
+                                <tr class="product__characteristics-row">
+                                    <td>Страна производства</td>
+                                    <td>Тайвань</td>
+                                </tr>
+                                <tr class="product__characteristics-row">
+                                    <td>Мощность выход</td>
+                                    <td>340 W</td>
+                                </tr>
+                                <tr class="product__characteristics-row">
+                                    <td>Напряжение вход/выход</td>
+                                    <td>220 V</td>
+                                </tr>
+                                <tr class="product__characteristics-row">
+                                    <td>Количество фаз вход/выход</td>
+                                    <td>3</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-tabs__item tabs__tab-item" data-tab-content-number="2">
+                            <div class="product__documentation">
+                                <a class="product__documentation-link" href="img/favicon.svg" download>
+                                    <svg class="product__documentation-icon" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="5" y="4" width="14" height="17" rx="2" fill="#7E869E"
+                                            fill-opacity="0.25" stroke="#1F2324" stroke-width="1.2" />
+                                        <path d="M9 9H15" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
+                                        <path d="M9 13H15" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
+                                        <path d="M9 17H13" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
+                                    </svg>
+                                    <p class="product__documentation-name">Документ.pdf</p>
+                                </a>
+                                <a class="product__documentation-link" href="img/favicon.svg" download>
+                                    <svg class="product__documentation-icon" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="5" y="4" width="14" height="17" rx="2" fill="#7E869E"
+                                            fill-opacity="0.25" stroke="#1F2324" stroke-width="1.2" />
+                                        <path d="M9 9H15" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
+                                        <path d="M9 13H15" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
+                                        <path d="M9 17H13" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
+                                    </svg>
+                                    <p class="product__documentation-name">Документ2. docx</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>

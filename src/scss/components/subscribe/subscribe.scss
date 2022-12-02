@@ -1,0 +1,71 @@
+.subscribe {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: var(--accent-color);
+    padding: 42px 0 59px;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url('@img/subscribe/bg-1.svg') no-repeat;
+        width: 402px;
+        height: 205px;
+        z-index: 1;
+    }
+
+    &__wrapper {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__title {
+        color: #FFFFFF;
+        margin-bottom: 21px;
+    }
+
+    &__input-group {
+        @include flexbox(false, false, false, column);
+        margin-bottom: 23px;
+    }
+
+    &__label {
+        @include font(12px, 15px, #FFF, 500);
+        margin-bottom: 12px;
+    }
+
+    &__input {
+        @include font(12px, 15px, #D8D8D8, 500);
+        border: 1px solid var(--bg-color-2);
+        padding-left: 20px;
+        background-color: transparent;
+        width: 283px;
+        height: 45px;
+
+        &::placeholder {
+            color: #DBDBDB;
+            line-height: 15px;
+        }
+    }
+
+
+    &__checkbox-group {
+        @include flexbox(false, flex-start, 12px);
+        margin-bottom: 26px;
+    }
+
+    &__checkbox {
+        min-width: 15px;
+        min-height: 15px;
+        background-color: transparent;
+        border: 1px solid #477ADA;
+    }
+
+    &__checkbox-label {
+        @include font(12px, 15px, #477ADA, 500);
+    }
+}

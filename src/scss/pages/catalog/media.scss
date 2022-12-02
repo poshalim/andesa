@@ -1,0 +1,87 @@
+@include laptop {
+    .catalog {
+        padding: 33px 0 126px;
+
+        &__bread-crumbs {
+            margin-bottom: 17px;
+        }
+
+        &__content {
+            @include flexbox(false, false, 72px);
+        }
+
+        &__title {
+            @include font(40px, 49px);
+            margin-bottom: 31px;
+        }
+
+        &__items {
+            gap: 49px 29px;
+            margin: 0;
+        }
+
+        &__btn-show {
+            display: none;
+        }
+    }
+
+    .catalog-item {
+        display: block;
+        max-width: 283px;
+
+        &__img-container {
+            width: 283px;
+            height: 238px;
+            margin-bottom: 21px;
+            @include flexbox(center, center);
+            position: relative;
+        }
+
+        &__img {
+            width: 227px;
+            height: 227px;
+        }
+
+        &__name {
+            display: block;
+            @include font(18px, 22px);
+            margin-bottom: 13px;
+        }
+
+        &__text {
+            display: block;
+            @include font(12px, 15px, false, 500);
+            margin-bottom: 19px;
+        }
+
+        &__price {
+            gap: 22px;
+            margin-bottom: 22px;
+        }
+
+        &__labels {
+            @include flexbox();
+        }
+    }
+
+    .catalog-filter {
+        margin-top: 12px;
+
+        &__btn {
+            display: none;
+        }
+
+        &__menu {
+            transform: translateY(0);
+            position: static;
+            height: auto;
+            width: auto;
+            padding: 0;
+            width: 241px;
+        }
+
+        &__close {
+            display: none;
+        }
+    }
+}

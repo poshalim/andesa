@@ -1,0 +1,18 @@
+@include laptop {
+    .guarantee {
+        padding: 32px 0 0;
+
+        &__breadcrumbs {
+            margin-bottom: 26px;
+        }
+
+        &__title {
+            margin-bottom: 27px;
+        }
+
+        &__text {
+            margin-bottom: 97px;
+            max-width: 1116px;
+        }
+    }
+}

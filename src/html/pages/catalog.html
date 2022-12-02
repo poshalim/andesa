@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../layouts/head.html', {
+"title": "Каталог",
+"style": "catalog"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('../layouts/header.html', {})
+
+        <main class="main">
+            <div class="spinner-wrapper"></div>
+        </main>
+        @@include('../layouts/footer.html', {})
+    </div>
+
+    <div class="modal quickOrder">
+        <div class="modal__bg">
+            <div class="modal__content quickOrder__content">
+                <h2 class="quickOrder__title">Быстрый заказ</h2>
+                <form class="quickOrder__form form">
+                    <fieldset class="quickOrder__input-group form__input-group">
+                        <label class="quickOrder__label" for="quickOrder-name">Имя</label>
+                        <input class="quickOrder__input form__input" id="quickOrder-name" type="text"
+                            placeholder="Введите ваше имя">
+                    </fieldset>
+                    <fieldset class="quickOrder__input-group form__input-group">
+                        <label class="quickOrder__label" for="quickOrder-surname">Фамилия</label>
+                        <input class="quickOrder__input form__input" id="quickOrder-surname" type="text"
+                            placeholder="Введите вашу фамилию">
+                    </fieldset>
+                    <fieldset class="quickOrder__input-group form__input-group">
+                        <label class="quickOrder__label" for="quickOrder-patronymic">Отчество</label>
+                        <input class="quickOrder__input form__input" id="quickOrder-patronymic" type="text"
+                            placeholder="Введите ваше отчество">
+                    </fieldset>
+                    <fieldset class="quickOrder__input-group form__input-group">
+                        <label class="quickOrder__label" for="quickOrder-email">E-mail</label>
+                        <input class="quickOrder__input form__input" id="quickOrder-email" type="email"
+                            placeholder="E-mail....">
+                    </fieldset>
+                    <fieldset class="quickOrder__input-group form__input-group">
+                        <label class="quickOrder__label" for="quickOrder-comment">Комментарий к заказу</label>
+                        <textarea class="quickOrder__textarea" id="quickOrder-comment"
+                            placeholder="Комментарий.."></textarea>
+                    </fieldset>
+                    <div class="quickOrder__files">
+                        <a class="quickOrder__file" href="#">
+                            <svg width="16" height="19" viewBox="0 0 16 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="1" width="14" height="17" rx="2" fill="#7E869E" fill-opacity="0.25"
+                                    stroke="#1F2324" stroke-width="1.2" />
+                                <path d="M5 6H11" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
+                                <path d="M5 10H11" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
+                                <path d="M5 14H9" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
+                            </svg>
+
+                            <p>Документ.pdf</p>
+                        </a>
+                    </div>
+                    <button class="quickOrder__addFile">+ Добавить документ</button>
+                    <fieldset class="quickOrder__checkbox-group form__checkbox-group">
+                        <input class="quickOrder__checkbox form__checkbox" id="quickOrder-checkbox" type="checkbox">
+                        <label class="quickOrder__checkbox-label form__checkbox-label"
+                            for="quickOrder-checkbox">Согласие на
+                            обработку
+                            персональных данных</label>
+                    </fieldset>
+                    <button class="quickOrder__submit btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    @@include('../layouts/catalog.html', {})
+    @@include('../layouts/product.html', {})
+    <script src="../js/app.min.js"></script>
+</body>
+
+</html>

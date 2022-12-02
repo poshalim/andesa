@@ -1,0 +1,15 @@
+@include laptop {
+    .services {
+        padding: 0 0 114px;
+
+        &__promo {
+            padding: 110px 0 167px;
+            background: linear-gradient(94.69deg, rgba(0, 0, 0, 0.5) 36.19%, rgba(0, 0, 0, 0) 56.57%), url('@img/services/bg.jpg') center center/cover no-repeat, linear-gradient(91.8deg, var(--accent-color) 20.97%, #4877D0 40.73%, #4477D9 78.81%);
+            margin-bottom: 102px;
+        }
+
+        &__description {
+            max-width: 560px;
+        }
+    }
+}

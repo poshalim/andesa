@@ -1,0 +1,71 @@
+@include laptop {
+    .product {
+        padding: 34px 0 133px;
+
+        &__breadcrumbs {
+            margin-bottom: 27px;
+        }
+
+        &__name {
+            @include font(32px, 39px);
+            margin-bottom: 31px;
+            margin-top: 0;
+        }
+
+        &__swiper {
+            height: 324px;
+            width: 385.260498046875px;
+            margin-bottom: 21px;
+        }
+
+        &__img {
+            width: 315.26px;
+            height: 308.53px;
+            transform: translateY(-17px);
+        }
+
+        &__code {
+            margin: 5px 0 25px;
+        }
+
+        &__description {
+            margin-bottom: 42px;
+        }
+
+
+        &__price {
+            gap: 30px;
+            margin-bottom: 45px;
+            position: relative;
+        }
+
+
+        &__discount {
+            position: absolute;
+            top: -22px;
+            left: 108px;
+        }
+
+        &-tabs__btns {
+            margin-bottom: 10px;
+            border-bottom: 1px solid var(--bg-color-2);
+        }
+
+        &-tabs__btn-characteristics {
+            padding: 11px 36px;
+        }
+
+        &-tabs__btn-documentation {
+            padding: 11px 25px;
+        }
+
+        &__documentation {
+            gap: 18px;
+            margin-top: 34px;
+        }
+
+        &__documentation-link {
+            gap: 8px;
+        }
+    }
+}

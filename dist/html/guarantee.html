@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гарантии</title>
+    <link rel="icon" type="image/svg" href="../img/favicon.svg">
+    <link rel="stylesheet" href="../css/guarantee/index.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="container">
+        <div class="header__navigation header-navigation">
+            <div class="header-navigation__top">
+                <a class="header-navigation__logo-link" href="index.html">
+                    <img class="header-navigation__logo logo" src="../img/header/logo.svg" alt="логотип">
+                    <p class="header-navigation__logo-text">Бесперебойные решения</p>
+                </a>
+                <p class="header-navigation__address">Гельсингфорсская ул., 4 корпус 1, Санкт-Петербург, 194044
+                </p>
+                <div class="header-navigation__cart cart">
+                    <svg class="cart__bg" width="182" height="51" viewBox="0 0 182 51" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M91.7524 51C57.3633 51 53.5 0 0.5 0H182C123 0 126.141 51 91.7524 51Z" fill="#E5E5E5" />
+                    </svg>
+                    <a class="cart__icon-container" href="cart.html">
+                        <svg class="cart__icon" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.68988 6.37994C5.49988 6.37994 5.29988 6.29994 5.15988 6.15994C4.86988 5.86994 4.86988 5.38994 5.15988 5.09994L8.78988 1.46994C9.07988 1.17994 9.55988 1.17994 9.84988 1.46994C10.1399 1.75994 10.1399 2.23994 9.84988 2.52994L6.21988 6.15994C6.06988 6.29994 5.87988 6.37994 5.68988 6.37994Z"
+                                fill="#1F2324" />
+                            <path
+                                d="M19.3101 6.37994C19.1201 6.37994 18.9301 6.30994 18.7801 6.15994L15.1501 2.52994C14.8601 2.23994 14.8601 1.75994 15.1501 1.46994C15.4401 1.17994 15.9201 1.17994 16.2101 1.46994L19.8401 5.09994C20.1301 5.38994 20.1301 5.86994 19.8401 6.15994C19.7001 6.29994 19.5001 6.37994 19.3101 6.37994Z"
+                                fill="#1F2324" />
+                            <path
+                                d="M20.71 10.6C20.64 10.6 20.57 10.6 20.5 10.6H20.27H4.5C3.8 10.61 3 10.61 2.42 10.03C1.96 9.57998 1.75 8.87998 1.75 7.84998C1.75 5.09998 3.76 5.09998 4.72 5.09998H20.28C21.24 5.09998 23.25 5.09998 23.25 7.84998C23.25 8.88998 23.04 9.57998 22.58 10.03C22.06 10.55 21.36 10.6 20.71 10.6ZM4.72 9.09998H20.51C20.96 9.10998 21.38 9.10998 21.52 8.96998C21.59 8.89998 21.74 8.65998 21.74 7.84998C21.74 6.71998 21.46 6.59998 20.27 6.59998H4.72C3.53 6.59998 3.25 6.71998 3.25 7.84998C3.25 8.65998 3.41 8.89998 3.47 8.96998C3.61 9.09998 4.04 9.09998 4.48 9.09998H4.72Z"
+                                fill="#1F2324" />
+                            <path
+                                d="M10.26 18.3C9.85001 18.3 9.51001 17.96 9.51001 17.55V14C9.51001 13.59 9.85001 13.25 10.26 13.25C10.67 13.25 11.01 13.59 11.01 14V17.55C11.01 17.97 10.67 18.3 10.26 18.3Z"
+                                fill="#1F2324" />
+                            <path
+                                d="M14.8601 18.3C14.4501 18.3 14.1101 17.96 14.1101 17.55V14C14.1101 13.59 14.4501 13.25 14.8601 13.25C15.2701 13.25 15.6101 13.59 15.6101 14V17.55C15.6101 17.97 15.2701 18.3 14.8601 18.3Z"
+                                fill="#1F2324" />
+                            <path
+                                d="M15.39 22.75H9.36C5.78 22.75 4.98 20.62 4.67 18.77L3.26 10.12C3.19 9.71 3.47 9.33 3.88 9.26C4.29 9.19 4.67 9.47 4.74 9.88L6.15 18.52C6.44 20.29 7.04 21.25 9.36 21.25H15.39C17.96 21.25 18.25 20.35 18.58 18.61L20.26 9.86C20.34 9.45 20.73 9.18 21.14 9.27C21.55 9.35 21.81 9.74 21.73 10.15L20.05 18.9C19.66 20.93 19.01 22.75 15.39 22.75Z"
+                                fill="#1F2324" />
+                        </svg>
+                        <div class="cart__amount-items"></div>
+                    </a>
+
+                    <div class="cart__items-container">
+                        <div class="spinner-wrapper"></div>
+                        <ul class="cart__items">
+                        </ul>
+                        <p class="cart__item-total"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-navigation__menu menu">
+                <div class="menu__head">
+                    <p class="menu__text">Меню</p>
+                    <div class="menu__icon">
+                        <div class="menu__line"></div>
+                        <div class="menu__line"></div>
+                        <div class="menu__line"></div>
+                    </div>
+                </div>
+                <div class="menu__body">
+                    <ul class="menu__items">
+                        <li class="menu__item">
+                            <a class="menu__link" href="about-company.html">О компании</a>
+                            <div class="menu__item-line"></div>
+                            <ul class="menu__list">
+                                <li class="menu__list-item"><a class="menu__list-link" href="reviews.html">Отзывы</a>
+                                </li>
+                                <li class="menu__list-item"><a class="menu__list-link"
+                                        href="employees.html">Сотрудники</a></li>
+                                <li class="menu__list-item"><a class="menu__list-link"
+                                        href="certificates.html">Сертификаты</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог</a></li>
+                        <li class="menu__item"><a href="services.html" class="menu__link">Услуги</a></li>
+                        <li class="menu__item"><a href="delivery.html" class="menu__link">Оплата /
+                                Доставка</a></li>
+                        <li class="menu__item"><a href="guarantee.html" class="menu__link">Гарантии</a>
+                        </li>
+                        <li class="menu__item"><a href="experience.html" class="menu__link">Опыт</a></li>
+                        <li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+                        <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header-navigation__connection">
+                        <div class="header-navigation__call">
+                            <img class="header-navigation__call-icon" src="../img/header/call.svg" alt="вызов">
+                            <a class="header-navigation__call-number" href="tel:+78129049157">+7 (812)
+                                904-91-57</a>
+                        </div>
+                        <div class="header-navigation__socials">
+                            <a class="header-navigation__social-link" href="#">
+                                <svg class="header-navigation__telegram" width="37" height="37" viewBox="0 0 37 37"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1265_4548)">
+                                        <path
+                                            d="M18.5 37C28.7012 37 37 28.7012 37 18.5C37 8.29879 28.7012 0 18.5 0C8.29879 0 0 8.29879 0 18.5C0 28.7012 8.29879 37 18.5 37ZM18.5 2.3125C27.4262 2.3125 34.6875 9.57375 34.6875 18.5C34.6875 27.4262 27.4262 34.6875 18.5 34.6875C9.57375 34.6875 2.3125 27.4262 2.3125 18.5C2.3125 9.57375 9.57375 2.3125 18.5 2.3125Z"
+                                            fill="#969696" />
+                                        <path
+                                            d="M12.1729 21.8222L14.5903 20.7724L13.9119 21.4522C13.6946 21.6696 13.5728 21.9641 13.5728 22.2693V26.7941C13.5728 27.8301 14.8246 28.3327 15.5461 27.6112L17.9727 25.1846L23.2606 27.8286C23.9451 28.1708 24.773 27.7654 24.9148 27.0007L27.9319 10.4108C28.0907 9.51818 27.2119 8.79668 26.3717 9.12659L6.76786 16.7995C5.88911 17.1417 5.77195 18.3442 6.56745 18.8514L11.0907 21.7374C11.4144 21.944 11.823 21.9764 12.1729 21.8222ZM25.2864 12.0373L22.9168 25.0721L18.261 22.7457C17.8108 22.5206 17.2743 22.6146 16.9274 22.9631L15.8853 24.0052V22.7519L20.5211 18.1161C21.4199 17.2173 20.4085 15.7342 19.243 16.2383L11.8168 19.4604L9.72941 18.1284L25.2864 12.0373Z"
+                                            fill="#969696" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1265_4548">
+                                            <rect width="37" height="37" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a class="header-navigation__social-link" href="#">
+                                <svg class="header-navigation__whatsapp" width="38" height="37" viewBox="0 0 38 37"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.1495 31.8045C13.4312 33.1458 16.0983 33.9166 18.9504 33.9166C27.4604 33.9166 34.367 27.0099 34.367 18.4999C34.367 9.98992 27.4604 3.08325 18.9504 3.08325C10.4404 3.08325 3.53369 9.98992 3.53369 18.4999C3.53369 21.3058 4.28915 23.942 5.59957 26.2083L3.53369 33.9166L11.1495 31.8045Z"
+                                        stroke="#969696" stroke-width="2.775" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M26.6584 23.387C26.6584 23.6645 26.5967 23.9574 26.4579 24.2349C26.3192 24.5124 26.1497 24.7745 25.9338 25.0212C25.5484 25.4374 25.1321 25.7457 24.6696 25.9307C24.2071 26.1312 23.6983 26.2237 23.1588 26.2237C22.3725 26.2237 21.5246 26.0387 20.6458 25.6532C19.7517 25.2678 18.873 24.759 17.9942 24.127C17.1 23.4795 16.2675 22.7549 15.4659 21.9686C14.6642 21.167 13.9551 20.319 13.3076 19.4403C12.6755 18.5615 12.1667 17.6828 11.7967 16.804C11.4267 15.9253 11.2417 15.0774 11.2417 14.2757C11.2417 13.7516 11.3342 13.2428 11.5192 12.7803C11.7042 12.3024 11.9971 11.8707 12.4134 11.4853C12.9067 10.992 13.4463 10.7607 14.0167 10.7607C14.2325 10.7607 14.4484 10.807 14.6488 10.8995C14.8492 10.992 15.0342 11.1307 15.1729 11.3312L16.9613 13.8595C17.1001 14.0599 17.2079 14.2295 17.2696 14.3991C17.3467 14.5686 17.3775 14.7228 17.3775 14.877C17.3775 15.062 17.3159 15.247 17.2079 15.432C17.1 15.617 16.9613 15.802 16.7763 15.987L16.1905 16.6036C16.098 16.6961 16.0671 16.7886 16.0671 16.912C16.0671 16.9736 16.0826 17.0353 16.098 17.097C16.1288 17.1586 16.1442 17.2049 16.1596 17.2511C16.2984 17.5132 16.545 17.837 16.8842 18.2378C17.2387 18.6386 17.6088 19.0549 18.0096 19.4557C18.4259 19.872 18.8267 20.242 19.243 20.5965C19.6438 20.9357 19.983 21.167 20.2451 21.3057C20.2913 21.3212 20.3375 21.352 20.3838 21.3674C20.4454 21.3982 20.5071 21.3982 20.5842 21.3982C20.7229 21.3982 20.8155 21.352 20.908 21.2595L21.4938 20.6736C21.6942 20.4732 21.8792 20.3345 22.0488 20.242C22.2338 20.1341 22.4034 20.0724 22.6038 20.0724C22.7579 20.0724 22.9121 20.1032 23.0817 20.1803C23.2513 20.2574 23.4363 20.3499 23.6213 20.4887L26.1805 22.3078C26.3809 22.4466 26.5196 22.6162 26.6121 22.8012C26.6121 22.9862 26.6584 23.1712 26.6584 23.387Z"
+                                        stroke="#969696" stroke-width="2.775" stroke-miterlimit="10" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="header-navigation__auth">
+                        <svg class="header-navigation__auth-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.16669 17.5C4.16669 14.2783 6.77836 11.6667 10 11.6667C13.2217 11.6667 15.8334 14.2783 15.8334 17.5"
+                                stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M10 9.16667C11.841 9.16667 13.3334 7.67428 13.3334 5.83333C13.3334 3.99238 11.841 2.5 10 2.5C8.15907 2.5 6.66669 3.99238 6.66669 5.83333C6.66669 7.67428 8.15907 9.16667 10 9.16667Z"
+                                stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <button class="header-navigation__auth-btn">Вход</button>
+                    </div>
+                    <div class="modal__close menu__close close">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="5.65698" y="4.94971" width="15" height="1" transform="rotate(45 5.65698 4.94971)"
+                                fill="#1F2324" />
+                            <rect x="16.2634" y="5.65686" width="15" height="1" transform="rotate(135 16.2634 5.65686)"
+                                fill="#1F2324" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+        <main class="main">
+            <section class="guarantee">
+                <div class="container">
+                    <div class="breadcrumbs guarantee__breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Гарантия</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 class="guarantee__title">Гарантия</h1>
+                    <div class="guarantee__text">
+                        <p>Оплата / Доставка</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed </p>
+                        <br>
+                        <p>Оплата / Доставка</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do </p>
+                    </div>
+
+                    <div class="benefits-list">
+                        <div class="benefits-item">
+                            <div class="benefits-item__img-container"><img class="benefit-item__img"
+                                    src="../img/about-company/benefit.svg" alt="icon"></div>
+                            <div class="benefits-item__text-container">
+                                <h4 class="benefits-item__title">Преимущество 1</h4>
+                                <p class="benefits-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed
+                                    do eiusmod tempor incididunt</p>
+                            </div>
+                        </div>
+                        <div class="benefits-item">
+                            <div class="benefits-item__img-container"><img class="benefit-item__img"
+                                    src="../img/about-company/benefit.svg" alt="icon"></div>
+                            <div class="benefits-item__text-container">
+                                <h4 class="benefits-item__title">Преимущество 2</h4>
+                                <p class="benefits-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed
+                                    do eiusmod tempor incididunt</p>
+                            </div>
+                        </div>
+                        <div class="benefits-item">
+                            <div class="benefits-item__img-container"><img class="benefit-item__img"
+                                    src="../img/about-company/benefit.svg" alt="icon"></div>
+                            <div class="benefits-item__text-container">
+                                <h4 class="benefits-item__title">Преимущество 3</h4>
+                                <p class="benefits-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed
+                                    do eiusmod tempor incididunt</p>
+                            </div>
+                        </div>
+                        <div class="benefits-item">
+                            <div class="benefits-item__img-container"><img class="benefit-item__img"
+                                    src="../img/about-company/benefit.svg" alt="icon"></div>
+                            <div class="benefits-item__text-container">
+                                <h4 class="benefits-item__title">Преимущество 4</h4>
+                                <p class="benefits-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed
+                                    do eiusmod tempor incididunt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+    <div class="footer__subscribe subscribe">
+        <div class="container">
+            <div class="subscribe__wrapper">
+                <h2 class="subscribe__title title">Полезная рассылка</h2>
+                <form class="subscribe__form form">
+                    <fieldset class="subscribe__input-group form__input-group">
+                        <label class="subscribe__label" for="subscribe-email">Почта</label>
+                        <input class="subscribe__input form__input" id="subscribe-email" type="email"
+                            placeholder="E-mail....">
+                    </fieldset>
+                    <fieldset class="subscribe__checkbox-group form__checkbox-group">
+                        <input class="subscribe__checkbox form__checkbox" id="subscribe-checkbox" type="checkbox">
+                        <label class="subscribe__checkbox-label form__checkbox-label"
+                            for="subscribe-checkbox">Подтверждаю свое
+                            согласие
+                            на обработку своих персональных данных в соответствии с Политикой конфиденциальности
+                            ООО
+                            "Андеса"</label>
+                    </fieldset>
+                    <button class="subscribe__btn btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__content">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a class="footer__logo-link" href="index.html">
+                    <img class="footer__logo logo" src="../img/header/logo.svg" alt="логотип">
+                    <p class="footer__logo-text">Бесперебойные решения</p>
+                </a>
+                <ul class="footer__items">
+                    <li class="footer__item"><a href="delivery.html" class="footer__link">Доставка /
+                            Оплата</a></li>
+                    <li class="footer__item"><a href="catalog.html" class="footer__link">Каталог</a></li>
+                    <li class="footer__item"><a href="about-company.html" class="footer__link">О
+                            компании</a></li>
+                    <li class="footer__item"><a href="services.html" class="footer__link">Услуги</a></li>
+                    <li class="footer__item"><a href="guarantee.html" class="footer__link">Гарантии</a>
+                    </li>
+                    <li class="footer__item"><a href="experience.html" class="footer__link">Опыт</a></li>
+                    <li class="footer__item footer__politics"><a href="error.html" class="footer__link">Политика
+                            обработки
+                            персональных данных</a></li>
+                    <li class="footer__item"><a href="news.html" class="footer__link">Новости</a></li>
+                    <li class="footer__item"><a href="contacts.html" class="footer__link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="footer__data-container">
+                    <div class="footer__call">
+                        <img class="footer__call-icon" src="../img/header/call.svg" alt="вызов">
+                        <a class="footer__call-number" href="tel:+78129049157">+7 (812) 904-91-57</a>
+                    </div>
+                    <p class="footer__address">Гельсингфорсская ул., 4 корпус 1, Санкт-Петербург, 194044</p>
+                    <a class="footer__email" href="mailto:HJYolv@woevg.com">HJYolv@woevg.com</a>
+                </div>
+                <div class="footer__socials">
+                    <a class="footer__social-link" href="#">
+                        <svg class="footer__telegram" width="37" height="37" viewBox="0 0 37 37" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1265_4548)">
+                                <path
+                                    d="M18.5 37C28.7012 37 37 28.7012 37 18.5C37 8.29879 28.7012 0 18.5 0C8.29879 0 0 8.29879 0 18.5C0 28.7012 8.29879 37 18.5 37ZM18.5 2.3125C27.4262 2.3125 34.6875 9.57375 34.6875 18.5C34.6875 27.4262 27.4262 34.6875 18.5 34.6875C9.57375 34.6875 2.3125 27.4262 2.3125 18.5C2.3125 9.57375 9.57375 2.3125 18.5 2.3125Z"
+                                    fill="#969696" />
+                                <path
+                                    d="M12.1729 21.8222L14.5903 20.7724L13.9119 21.4522C13.6946 21.6696 13.5728 21.9641 13.5728 22.2693V26.7941C13.5728 27.8301 14.8246 28.3327 15.5461 27.6112L17.9727 25.1846L23.2606 27.8286C23.9451 28.1708 24.773 27.7654 24.9148 27.0007L27.9319 10.4108C28.0907 9.51818 27.2119 8.79668 26.3717 9.12659L6.76786 16.7995C5.88911 17.1417 5.77195 18.3442 6.56745 18.8514L11.0907 21.7374C11.4144 21.944 11.823 21.9764 12.1729 21.8222ZM25.2864 12.0373L22.9168 25.0721L18.261 22.7457C17.8108 22.5206 17.2743 22.6146 16.9274 22.9631L15.8853 24.0052V22.7519L20.5211 18.1161C21.4199 17.2173 20.4085 15.7342 19.243 16.2383L11.8168 19.4604L9.72941 18.1284L25.2864 12.0373Z"
+                                    fill="#969696" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1265_4548">
+                                    <rect width="37" height="37" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a class="footer__social-link" href="#">
+                        <svg class="footer__whatsapp" width="38" height="37" viewBox="0 0 38 37" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.1495 31.8045C13.4312 33.1458 16.0983 33.9166 18.9504 33.9166C27.4604 33.9166 34.367 27.0099 34.367 18.4999C34.367 9.98992 27.4604 3.08325 18.9504 3.08325C10.4404 3.08325 3.53369 9.98992 3.53369 18.4999C3.53369 21.3058 4.28915 23.942 5.59957 26.2083L3.53369 33.9166L11.1495 31.8045Z"
+                                stroke="#969696" stroke-width="2.775" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M26.6584 23.387C26.6584 23.6645 26.5967 23.9574 26.4579 24.2349C26.3192 24.5124 26.1497 24.7745 25.9338 25.0212C25.5484 25.4374 25.1321 25.7457 24.6696 25.9307C24.2071 26.1312 23.6983 26.2237 23.1588 26.2237C22.3725 26.2237 21.5246 26.0387 20.6458 25.6532C19.7517 25.2678 18.873 24.759 17.9942 24.127C17.1 23.4795 16.2675 22.7549 15.4659 21.9686C14.6642 21.167 13.9551 20.319 13.3076 19.4403C12.6755 18.5615 12.1667 17.6828 11.7967 16.804C11.4267 15.9253 11.2417 15.0774 11.2417 14.2757C11.2417 13.7516 11.3342 13.2428 11.5192 12.7803C11.7042 12.3024 11.9971 11.8707 12.4134 11.4853C12.9067 10.992 13.4463 10.7607 14.0167 10.7607C14.2325 10.7607 14.4484 10.807 14.6488 10.8995C14.8492 10.992 15.0342 11.1307 15.1729 11.3312L16.9613 13.8595C17.1001 14.0599 17.2079 14.2295 17.2696 14.3991C17.3467 14.5686 17.3775 14.7228 17.3775 14.877C17.3775 15.062 17.3159 15.247 17.2079 15.432C17.1 15.617 16.9613 15.802 16.7763 15.987L16.1905 16.6036C16.098 16.6961 16.0671 16.7886 16.0671 16.912C16.0671 16.9736 16.0826 17.0353 16.098 17.097C16.1288 17.1586 16.1442 17.2049 16.1596 17.2511C16.2984 17.5132 16.545 17.837 16.8842 18.2378C17.2387 18.6386 17.6088 19.0549 18.0096 19.4557C18.4259 19.872 18.8267 20.242 19.243 20.5965C19.6438 20.9357 19.983 21.167 20.2451 21.3057C20.2913 21.3212 20.3375 21.352 20.3838 21.3674C20.4454 21.3982 20.5071 21.3982 20.5842 21.3982C20.7229 21.3982 20.8155 21.352 20.908 21.2595L21.4938 20.6736C21.6942 20.4732 21.8792 20.3345 22.0488 20.242C22.2338 20.1341 22.4034 20.0724 22.6038 20.0724C22.7579 20.0724 22.9121 20.1032 23.0817 20.1803C23.2513 20.2574 23.4363 20.3499 23.6213 20.4887L26.1805 22.3078C26.3809 22.4466 26.5196 22.6162 26.6121 22.8012C26.6121 22.9862 26.6584 23.1712 26.6584 23.387Z"
+                                stroke="#969696" stroke-width="2.775" stroke-miterlimit="10" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer__rights">2021 © Все права защищены</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal authorization">
+    <div class="modal__bg">
+        <div class="modal__content authorization__content">
+            <h3 class="authorization__title">Авторизация</h3>
+            <form class="authorization__form form">
+                <fieldset class="authorization__input-container">
+                    <fieldset class="authorization__input-group form__input-group">
+                        <label class="authorization__label" for="auth-email">E-mail</label>
+                        <input class="authorization__input form__input" id="auth-email" type="email"
+                            placeholder="eret@///">
+                    </fieldset>
+                    <fieldset class="authorization__input-group form__input-group">
+                        <label class="authorization__label" for="auth-password">Пароль</label>
+                        <input class="authorization__input form__input" id="auth-password" type="password"
+                            placeholder="********" autocomplete="off">
+                    </fieldset>
+                </fieldset> <button class="authorization__btn-recovery" type="button">Забыли пароль?</button>
+                <div class="authorization__auth">
+                    <button class="authorization__btn-auth btn">Войти</button>
+                    <fieldset class="authorization__checkbox-group">
+                        <input class="authorization__checkbox" id="auth-remember" type="checkbox">
+                        <label class="authorization__checkbox-label" for="auth-remember">Запомнить меня</label>
+                    </fieldset>
+                </div>
+                <p class="authorization__text">Если у вас еще нет аккаунта, вам необходимо
+                    <button class="authorization__reg-btn" type="button">Зарегистрироваться.</button>
+                </p>
+            </form>
+            <div class="authorization__close modal__close">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5.65698" y="4.94971" width="15" height="1" transform="rotate(45 5.65698 4.94971)"
+                        fill="#1F2324" />
+                    <rect x="16.2634" y="5.65686" width="15" height="1" transform="rotate(135 16.2634 5.65686)"
+                        fill="#1F2324" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal recovery">
+    <div class="modal__bg">
+        <div class="modal__content recovery__content">
+            <h3 class="recovery__title">Восстановление пароля</h3>
+            <form class="recovery__form form">
+                <fieldset class="recovery__input-group form__input-group">
+                    <label class="recovery__label" for="recovery-email">E-mail</label>
+                    <input class="recovery__input form__input" id="recovery-email" type="email" placeholder="eret@///">
+                </fieldset>
+                <p class="recovery__text">Контрольная строка для смены пароля будет высланы вам по E-Mail.</p>
+                <button class="recovery__btn btn">Восстановить</button>
+            </form>
+            <div class="recovery__close modal__close">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5.65698" y="4.94971" width="15" height="1" transform="rotate(45 5.65698 4.94971)"
+                        fill="#1F2324" />
+                    <rect x="16.2634" y="5.65686" width="15" height="1" transform="rotate(135 16.2634 5.65686)"
+                        fill="#1F2324" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal privacy">
+    <div class="modal__bg">
+        <div class="modal__content privacy__content">
+            <div>
+                <p class="privacy__text">Используя этот веб-сайт, вы соглашаетесь использовать наши файлы cookie.
+                </p>
+                <a class="privacy__link" href="#">О политике конфиденциальности.</a>
+            </div>
+            <button class="privacy__btn-accept btn">Я согласен</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal registration">
+    <div class="modal__bg">
+        <div class="modal__content registration__content">
+            <h3 class="registration__title">Регистрация</h3>
+            <div class="registration-tabs__wrapper tabs__wrapper">
+                <div class="registration-tabs__btns tabs__btns">
+                    <div class="registration-tabs__btn registration-tabs__btn--active tabs__btn"
+                        data-tab-btn-number="1">
+                        <div class="registration__type-checked">
+                            <svg class="registration__checked-icon" width="15" height="14" viewBox="0 0 15 14"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 9L5 12L14 1" stroke="white" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <span>Физическое лицо</span>
+                    </div>
+                    <div class="registration-tabs__btn tabs__btn" data-tab-btn-number="2">
+                        <div class="registration__type-checked">
+                            <svg class="registration__checked-icon" width="15" height="14" viewBox="0 0 15 14"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 9L5 12L14 1" stroke="white" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <span>Юридическое лицо</span>
+                    </div>
+                </div>
+                <div class="registration-tabs__items tabs__items">
+                    <form class="registration-tabs__item tabs__tab-item" id="registration-form-individual"
+                        data-tab-content-number="1">
+                        <fieldset class="registration__input-container">
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="reg-name">Имя</label>
+                                <input class="registration__input form__input" id="reg-name" type="text"
+                                    placeholder="Введите Ваше имя">
+                            </fieldset>
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="reg-surname">Фамилия</label>
+                                <input class="registration__input form__input" id="reg-surname" type="text"
+                                    placeholder="Введите Вашу фамилию">
+                            </fieldset>
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="reg-patronymic">Отчество</label>
+                                <input class="registration__input form__input" id="reg-patronymic" type="text"
+                                    placeholder="Введите Ваше отчество">
+                            </fieldset>
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="reg-email">E-mail</label>
+                                <input class="registration__input form__input" id="reg-email" type="email"
+                                    placeholder="Введите адрес электронной почты">
+                            </fieldset>
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="reg-phone-number">Телефон</label>
+                                <input class="registration__input form__input" id="reg-phone-number" type="tel"
+                                    placeholder="+7 -- --- --- --">
+                            </fieldset>
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="reg-password">Пароль</label>
+                                <input class="registration__input form__input" id="reg-password" type="password"
+                                    placeholder="*********" autocomplete="off">
+                            </fieldset>
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="reg-repeat-password">Подтверждение
+                                    пароля</label>
+                                <input class="registration__input form__input" id="reg-repeat-password" type="password"
+                                    placeholder="*********" autocomplete="off">
+                            </fieldset>
+                        </fieldset>
+                        <fieldset class="registration__checkbox-group form__checkbox-group">
+                            <input class="registration__checkbox form__checkbox" id="reg-agreement" type="checkbox">
+                            <label class="registration__checkbox-label form__checkbox-label"
+                                for="reg-agreement">Согласие на
+                                обработку
+                                персональных данных</label>
+                        </fieldset>
+                    </form>
+                    <form class="registration-tabs__item tabs__tab-item" id="registration-form-company"
+                        data-tab-content-number="2">
+                        <fieldset class="registration__input-container">
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="name-company">Название компании</label>
+                                <input class="registration__input form__input" id="name-company" type="text"
+                                    placeholder="Введите название компании">
+                            </fieldset>
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="legal-address">Юридический адрес</label>
+                                <input class="registration__input form__input" id="legal-address" type="text"
+                                    placeholder="Введите юридический адрес">
+                            </fieldset>
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="inn">ИНН</label>
+                                <input class="registration__input form__input" id="inn" type="number"
+                                    placeholder="Введите ИНН">
+                            </fieldset>
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="kpp">КПП</label>
+                                <input class="registration__input form__input" id="kpp" type="number"
+                                    placeholder="Введите КПП">
+                            </fieldset>
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="contact-person">Контактное лицо</label>
+                                <input class="registration__input form__input" id="contact-person" type="text"
+                                    placeholder="Введите Ваше ФИО">
+                            </fieldset>
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="reg-email-company">E-mail</label>
+                                <input class="registration__input form__input" id="reg-email-company" type="email"
+                                    placeholder="Введите адрес электронной почты">
+                            </fieldset>
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="reg-phone-number-company">Телефон</label>
+                                <input class="registration__input form__input" id="reg-phone-number-company" type="tel"
+                                    placeholder="+7 -- --- --- --">
+                            </fieldset>
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="reg-password-company">Пароль</label>
+                                <input class="registration__input form__input" id="reg-password-company" type="password"
+                                    placeholder="*********" autocomplete="off">
+                            </fieldset>
+                            <fieldset class="registration__input-group form__input-group">
+                                <label class="registration__label" for="reg-repeat-password-company">Подтверждение
+                                    пароля</label>
+                                <input class="registration__input form__input" id="reg-repeat-password-company"
+                                    type="password" placeholder="*********" autocomplete="off">
+                            </fieldset>
+                        </fieldset>
+                        <fieldset class="registration__checkbox-group form__checkbox-group">
+                            <input class="registration__checkbox form__checkbox" id="reg-agreement-company"
+                                type="checkbox">
+                            <label class="registration__checkbox-label form__checkbox-label"
+                                for="reg-agreement-company">Согласие на
+                                обработку
+                                персональных данных</label>
+                        </fieldset>
+                    </form>
+                </div>
+                <button class="registration__btn-auth registration__submit btn"
+                    form="registration-form-individual">Зарегистрироваться</button>
+            </div>
+            <div class="registration__close modal__close">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5.65698" y="4.94971" width="15" height="1" transform="rotate(45 5.65698 4.94971)"
+                        fill="#1F2324" />
+                    <rect x="16.2634" y="5.65686" width="15" height="1" transform="rotate(135 16.2634 5.65686)"
+                        fill="#1F2324" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <script src="../js/app.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.order-formed {
+    padding: 55px 0 80px;
+    text-align: center;
+
+    &__icon {
+        margin-bottom: 2px;
+    }
+
+    &__title {
+        @include font(40px, 49px, false, 400);
+        text-transform: uppercase;
+        margin-bottom: 26px;
+    }
+
+    &__subtitle {
+        @include font(18px, 22px, #000, 600);
+        margin-bottom: 22px;
+    }
+
+    &__text {
+        @include font(16px, 20px, #000, 500);
+    }
+}

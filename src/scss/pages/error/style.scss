@@ -1,0 +1,27 @@
+.error {
+    padding: 45px 0 88px;
+
+    &__inner {
+        text-align: center;
+    }
+
+    &__code {
+        @include font(156px, 273px, #231F20, 400);
+        margin-bottom: -10px;
+    }
+
+    &__title {
+        @include font(28px, 35px, #000, 500);
+        margin-bottom: 26px;
+    }
+
+    &__desc {
+        @include font(16px, 20px, #000, 500);
+        margin-bottom: 35px;
+    }
+
+    &__btn-return {
+        display: inline;
+        margin: 0 auto;
+    }
+}

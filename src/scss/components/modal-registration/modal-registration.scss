@@ -1,0 +1,97 @@
+.registration {
+
+    &__content {
+        width: 100%;
+        position: relative;
+        padding: 31px 15px 39px;
+    }
+
+    &__title {
+        @include font(32px, 39px, false, 500);
+        margin-bottom: 23px;
+    }
+
+    &-tabs__btns {
+        @include flexbox(false, center, 34px);
+        margin-bottom: 26px;
+    }
+
+    &-tabs__btn {
+        @include font(12px, 10px, false, 500);
+        @include flexbox(false, center, 8px);
+        cursor: pointer;
+    }
+
+    &-tabs__btn--active {
+        color: var(--accent-color);
+
+        & .registration__type-checked {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+
+        & .registration__checked-icon {
+            display: block;
+        }
+    }
+
+    &__type-checked {
+        width: 12px;
+        height: 12px;
+        border: 1px solid var(--text-color-second);
+        position: relative;
+    }
+
+    &__checked-icon {
+        position: absolute;
+        top: -4px;
+        left: -1px;
+        display: none;
+    }
+
+    &__input-container {
+        @include flexbox(false, false, 20px, column);
+        margin-bottom: 29px;
+    }
+
+    &__input-group {
+        @include flexbox(false, false, 12px, column);
+    }
+
+    &__label {
+        @include font(12px, 15px, false, 500);
+    }
+
+    &__input {
+        height: 45px;
+        @include font(12px, 15px, false, 500);
+        border: 1px solid var(--bg-color-2);
+        padding-left: 20px;
+
+        &::placeholder {
+            color: var(--text-color-second);
+        }
+    }
+
+    &__checkbox-group {
+        max-width: 300px;
+        @include flexbox(false, false, 10px);
+        margin-bottom: 32px;
+    }
+
+    &__checkbox {
+        border: 1px solid var(--text-color-second);
+        height: 12px;
+        width: 12px;
+    }
+
+    &__checkbox-label {
+        @include font(12px, 11px, var(--text-color-second));
+    }
+
+    &__close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+}

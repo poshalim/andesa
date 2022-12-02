@@ -1,0 +1,39 @@
+@include laptop {
+    .employees {
+        padding: 32px 0 100px;
+
+        &__bread-crumbs {
+            margin-bottom: 25px;
+        }
+
+        &__title {
+            @include font(40px, 49px);
+            margin-bottom: 35px;
+        }
+
+        &__text {
+            max-width: 970px;
+            margin-bottom: 46px;
+        }
+
+        &__items {
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        &__item {
+            max-width: 283px;
+        }
+
+        &__item-top {
+            display: block;
+            margin-bottom: 21px;
+        }
+
+        &__item-photo {
+            width: 283px;
+            height: 287px;
+            margin-bottom: 20px;
+        }
+    }
+}

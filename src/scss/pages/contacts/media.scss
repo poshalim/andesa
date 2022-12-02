@@ -1,0 +1,50 @@
+@include laptop {
+    .contacts {
+        padding: 32px 0 99px;
+
+        &__breadcrumbs {
+            margin-bottom: 26px;
+        }
+
+        &__content {
+            @include flexbox(space-between, false, 50px 0, false, wrap);
+        }
+
+        &__title {
+            margin-bottom: 28px;
+        }
+
+        &__our-contacts {
+            margin: 0;
+        }
+
+        &__our-contacts-col {
+            gap: 30px;
+        }
+
+        &__location {
+            margin: 0;
+            order: 1;
+        }
+
+        &__input-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 17px 26px;
+            margin-bottom: 31px;
+            margin-top: 4px;
+        }
+
+        &__input-group {
+            min-width: 284px;
+        }
+
+        &__textarea {
+            width: 594px;
+        }
+
+        &__checkbox-group {
+            margin-bottom: 29px;
+        }
+    }
+}

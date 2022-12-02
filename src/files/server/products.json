@@ -1,0 +1,87 @@
+{
+    "3434e3o": {
+        "name": "ИБП CyberPower BU600E",
+        "img": "../img/catalog/product-5.png",
+        "isHit": true,
+        "isNovetly": true,
+        "descriptionShort": "Обеспечивает домашних и офисных пользователей надежным...",
+        "descriptionFull": "Обеспечивает домашних и офисных пользователей надежным резервированием питания....",
+        "currentPrice": 15000,
+        "oldPrice": 14000,
+        "category": "ibp",
+        "manufacturer": "cyberPower"
+        
+    },
+    "3434e32": {
+        "name": "ИБП CyberPower BU600E",
+        "img": "../img/catalog/product-5.png",
+        "isHit": false,
+        "isNovetly": false,
+        "descriptionShort": "Обеспечивает домашних и офисных пользователей надежным...",
+        "descriptionFull": "Обеспечивает домашних и офисных пользователей надежным резервированием питания....",
+        "currentPrice": 35000,
+        "oldPrice": 45000,
+        "category": "ibp",
+        "manufacturer": "cyberPower"
+    },
+    "3434e33": {
+        "name": "ИБП CyberPower BU600E",
+        "img": "../img/catalog/product-5.png",
+        "isHit": true,
+        "isNovetly": false,
+        "descriptionShort": "Обеспечивает домашних и офисных пользователей надежным...",
+        "descriptionFull": "Обеспечивает домашних и офисных пользователей надежным резервированием питания....",
+        "currentPrice": 21000,
+        "oldPrice": 35000,
+        "category": "networkFilters",
+        "manufacturer": "atlanta"
+    },
+    "3434e34": {
+        "name": "ИБП CyberPower BU600E",
+        "img": "../img/catalog/product-5.png",
+        "isHit": false,
+        "isNovetly": true,
+        "descriptionShort": "Обеспечивает домашних и офисных пользователей надежным...",
+        "descriptionFull": "Обеспечивает домашних и офисных пользователей надежным резервированием питания....",
+        "currentPrice": 15000,
+        "oldPrice": 15700,
+        "category": "ibpForHeating",
+        "manufacturer": "atlanta"
+    },
+    "3434e35": {
+        "name": "ИБП CyberPower BU600E",
+        "img": "../img/catalog/product-5.png",
+        "isHit": false,
+        "isNovetly": false,
+        "descriptionShort": "Обеспечивает домашних и офисных пользователей надежным...",
+        "descriptionFull": "Обеспечивает домашних и офисных пользователей надежным резервированием питания....",
+        "currentPrice": 35000,
+        "oldPrice": 45000,
+        "category": "monitoring",
+        "manufacturer": "megaladon"
+    },
+    "3434e36": {
+        "name": "ИБП CyberPower BU600E",
+        "img": "../img/catalog/product-5.png",
+        "isHit": false,
+        "isNovetly": false,
+        "descriptionShort": "Обеспечивает домашних и офисных пользователей надежным...",
+        "descriptionFull": "Обеспечивает домашних и офисных пользователей надежным резервированием питания....",
+        "currentPrice": 35000,
+        "oldPrice": 45000,
+        "category": "powerDistributors",
+        "manufacturer": "goodCompany"
+    },
+    "3434e37": {
+        "name": "ИБП CyberPower BU600E",
+        "img": "../img/catalog/product-5.png",
+        "isHit": false,
+        "isNovetly": false,
+        "descriptionShort": "Обеспечивает домашних и офисных пользователей надежным...",
+        "descriptionFull": "Обеспечивает домашних и офисных пользователей надежным резервированием питания....",
+        "currentPrice": 35000,
+        "oldPrice": 45000,
+        "category": "threePhase",
+        "manufacturer": "goodCompany"
+    }
+}

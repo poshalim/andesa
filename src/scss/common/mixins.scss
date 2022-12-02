@@ -1,0 +1,36 @@
+@mixin font($font-size, $line-height, $color: false, $font-weight: false) {
+    font-size: $font-size;
+    line-height: $line-height;
+
+    @if $color {
+        color: $color;
+    }
+
+    @if $font-weight {
+        font-weight: $font-weight;
+    }
+}
+
+@mixin flexbox($justify: false, $align: false, $gap: false, $direction: false, $wrap: false) {
+    display: flex;
+
+    @if $justify {
+        justify-content: $justify;
+    }
+
+    @if $align {
+        align-items: $align;
+    }
+
+    @if $gap {
+        gap: $gap;
+    }
+
+    @if $direction {
+        flex-direction: $direction;
+    }
+    
+    @if $wrap {
+        flex-wrap: $wrap;
+    }
+}

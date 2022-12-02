@@ -1,0 +1,83 @@
+.contacts {
+    padding: 14px 0 50px;
+
+    &__breadcrumbs {
+        margin-bottom: 6px;
+    }
+
+    &__title {
+        @include font(40px, 49px, false, 400);
+        margin-bottom: 20px;
+    }
+
+    &__our-contacts {
+        max-width: 500px;
+        @include flexbox(false, false, 30px);
+        @include font(16px, 20px, #000, 500);
+        margin-bottom: 33px;
+    }
+
+    &__our-contacts-col {
+        @include flexbox(false, false, 20px, column);
+    }
+
+    &-email__value,
+    &-address__value {
+        @include font(14px, 17px, false, 400);
+    }
+
+
+    &__location {
+        width: 100%;
+        height: 347px;
+        margin-bottom: 24px;
+        object-fit: cover;
+    }
+
+    &__form {
+        max-width: 596px;
+    }
+
+    &__input-container {
+        @include flexbox(false, false, 16px, column);
+        margin-bottom: 25px;
+    }
+
+    &__input-group {
+        @include flexbox(false, false, 13px, column);
+    }
+
+    &__label {
+        @include font(12px, 15px, false, 500);
+    }
+
+    &__input,
+    &__textarea {
+        height: 45px;
+        border: 1px solid var(--bg-color-2);
+        @include font(12px, 15px, var(--text-color-second), 500);
+        padding-left: 20px;
+    }
+
+    &__textarea {
+        font-family: 'Montserrat';
+        padding-top: 15px;
+        height: 70px;
+        resize: none;
+    }
+
+    &__checkbox-group {
+        @include flexbox(false, false, 10px);
+        margin-bottom: 25px;
+    }
+
+    &__checkbox {
+        height: 12px;
+        width: 12px;
+        border: 1px solid var(--text-color-second);
+    }
+
+    &__checkbox-label {
+        @include font(12px, 11px, var(--text-color-second));
+    }
+}

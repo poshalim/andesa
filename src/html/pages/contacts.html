@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../layouts/head.html', {
+"title": "Контакты",
+"style": "contacts"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('../layouts/header.html', {})
+        <main class="main">
+            <section class="contacts">
+                <div class="container">
+                    <div class="breadcrumbs contacts__breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__content">
+                        <div>
+                            <h1 class="contacts__title">Контакты</h1>
+                            <div class="contacts__our-contacts">
+                                <div class="contacts__our-contacts-col">
+                                    <p>Телефон:</p>
+                                    <p>Почта:</p>
+                                    <p>Адрес:</p>
+                                </div>
+                                <div class="contacts__our-contacts-col">
+                                    <a class="contacts-number__value" href="tel:+78129049157">+7 (812) 904-91-57</a>
+                                    <a class="contacts-email__value" href="mailto:mail@mail.ru">mail@mail.ru</a>
+                                    <p class="contacts-address__value">СПб, ул. Гельсингфорсская, дом 4, корпус 1, литер
+                                        В, помещение 18-Н, офис №62-64</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__location" id="map"></div>
+                        <form class="contacts__form form">
+                            <fieldset class="contacts__input-container">
+                                <fieldset class="contacts__input-group form__input-group">
+                                    <label class="contacts__label" for="fio">ФИО</label>
+                                    <input class="contacts__input form__input" id="fio" type="text"
+                                        placeholder="Введите ваше ФИО">
+                                </fieldset>
+                                <fieldset class="contacts__input-group form__input-group">
+                                    <label class="contacts__label" for="email">E-mail</label>
+                                    <input class="contacts__input form__input" id="email" type="email"
+                                        placeholder="Введите адрес электронной почты">
+                                </fieldset>
+                                <fieldset class="contacts__input-group form__input-group">
+                                    <label class="contacts__label" for="comment">Комментарий</label>
+                                    <textarea class="contacts__textarea" id="comment"
+                                        placeholder="Комментарий"></textarea>
+                                </fieldset>
+                            </fieldset>
+                            <fieldset class="contacts__checkbox-group form__checkbox-group">
+                                <input class="contacts__checkbox form__checkbox" id="default-checkbox"
+                                    type="checkbox">
+                                <label class="contacts__checkbox-label form__checkbox-label"
+                                    for="default-checkbox">Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna
+                                </label>
+                            </fieldset>
+                            <button class="contacts__btn btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('../layouts/footer.html', {})
+    </div>
+
+    <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=8b676e8b-2bb9-4dca-b67e-ae7d614490c4&load=package.standard&lang=ru-RU">
+    </script>
+    <script src="../js/app.min.js" type="text/javascript"></script>
+</body>
+
+</html>

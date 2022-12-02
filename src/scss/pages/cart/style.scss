@@ -1,0 +1,128 @@
+.cartPage {
+    padding: 15px 0 52px;
+
+    &__breadcrumbs {
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        @include font(36px, 44px, false, 400);
+        margin-bottom: 18px;
+    }
+
+    &__items-head {
+        display: none;
+    }
+
+    &__content--empty {
+        font-size: 26px;
+        margin: 80px 0 40px;
+        text-align: center;
+    }
+
+    &__items {
+        @include flexbox(false, false, 16px, column);
+        margin-bottom: 49px;
+    }
+
+    &-item {
+        @include flexbox(false, false, 16px);
+        position: relative;
+
+        &:not(:last-child) {
+            padding-bottom: 20px;
+            border-bottom: 1px dashed var(--bg-color-2);
+        }
+    }
+
+    &-item__img {
+        margin-top: 4px;
+        height: 81px;
+        width: 81px;
+    }
+
+    &-item__code {
+        @include font(12px, 15px, false, 800);
+        margin-bottom: 8px;
+    }
+
+    &-item__description {
+        @include font(14px, 17px, #000);
+        margin-bottom: 9px;
+    }
+
+    &-item__description--big {
+        display: none;
+    }
+
+    &-item__price {
+        display: none;
+    }
+
+    &-item__footer {
+        @include flexbox(false, center, 27px);
+    }
+
+    &-item__amount {
+        @include flexbox(false, center 10px);
+    }
+
+    &-item__amount-btn {
+        height: 20px;
+        width: 20px;
+        background-color: #EAEFF8;
+        box-shadow: inset 1px 0px 1px rgba(164, 164, 164, 0.25);
+        border-radius: 4px;
+    }
+
+    &-item__item-sum {
+        width: 80px;
+        @include font(14px, 17px, #000, 600);
+    }
+
+    &-item__remove-from-cart {
+        position: absolute;
+        top: 4px;
+        right: 1px;
+        cursor: pointer;
+    }
+
+    &-item__total-sum {
+        @include font(18px, 22px, var(--accent-color), 600);
+        text-align: right;
+        margin-top: 24px;
+        margin-bottom: 44px;
+    }
+
+    &-item__buttons {
+        @include flexbox(false, false, 32px);
+    }
+
+    &-item__checkout-btn {
+        padding: 12px 21px;
+        height: 38px;
+        min-width: 163px;
+        font-size: 14px;
+    }
+
+    &-item__quick-order-btn {
+        padding: 12px 22px;
+        background-color: transparent;
+        border: 1px solid var(--accent-color);
+        height: 38px;
+        border-radius: 24px;
+        @extend %centered-flexbox;
+        flex-direction: row;
+        gap: 10px;
+        line-height: 17px;
+        transition: background-color .5s ease, color .5s ease;
+
+        @media(any-hover:hover) {
+            &:hover {
+                background-color: var(--accent-color);
+                color: #FFF;
+                transition: background-color .5s ease, color .5s ease;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@include laptop {
+    .personal-account {
+        padding: 57px 0 100px;
+
+        &__title {
+            @include font(40px, 49px, false, 400);
+            margin-bottom: 31px;
+        }
+
+        &__head {
+            @include flexbox(false, center, 59px);
+            margin-bottom: 52px;
+        }
+
+        &-tabs__btns {
+            margin: 0;
+        }
+
+        &__choice {
+            gap: 62px;
+        }
+
+        &__items {
+            @include flexbox(center, false, 25px, column);
+        }
+
+        &__item {
+            padding: 0 0 21px;
+        }
+
+        &-item__link {
+            @include flexbox(false, center);
+        }
+
+        &-item__number {
+            margin: 0;
+            margin-right: 191px;
+        }
+
+        &-item__status {
+            margin: 0;
+        }
+
+        &-item__footer {
+            gap: 266px;
+            margin-left: auto;
+            margin-right: 64px;
+
+        }
+    }
+
+    .profile {
+        &__btn-change {
+            margin-top: -15px;
+        }
+    }
+}

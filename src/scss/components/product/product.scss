@@ -1,0 +1,166 @@
+.product {
+    padding: 14px 0 40px;
+
+    &__breadcrumbs {
+        margin-bottom: 6px;
+    }
+
+    &__name {
+        @include font(24px, 29px, false, 500);
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    &__content {
+        @include flexbox(false, false, 32px, false, wrap);
+    }
+
+    &__swiper {
+        width: 350px;
+        height: 235px;
+        background-color: var(--bg-color);
+        margin-bottom: 21px;
+    }
+
+    &__img-wrapper {
+        @extend %centered-flexbox;
+        position: relative;
+    }
+
+    &__img {
+        width: 275px;
+        height: 274px;
+    }
+
+    &__thumbs-swiper {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        width: 143px;
+        height: 34.48px;
+    }
+
+    &__img-thumbs-wrapper {
+        background: var(--bg-color);
+        border: 1px solid #DBDBDB;
+        width: 41px;
+        height: 34.48px;
+        @include flexbox(center, center);
+        cursor: pointer;
+    }
+
+    .swiper-slide-thumb-active {
+        border: 1px solid var(--accent-color);
+    }
+
+    &__img-thumbs {
+        width: 32.89px;
+        height: 32.89px;
+    }
+
+    &__code {
+        @include font(12px, 15px, false, 500);
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        @include font(14px, 34px, var(--text-color-second), 500);
+        margin-bottom: 24px;
+    }
+
+    &__description-value {
+        color: var(--text-color-main);
+        margin-left: 4px;
+    }
+
+    &__price {
+        @include flexbox(false, center, 23px);
+        margin-bottom: 37px;
+    }
+
+    &__discount {
+        @include font(14px, 17px, #000);
+        background-color: #ffe4e4;
+    }
+
+    &__buttons {
+        @include flexbox(false, false, 30px);
+        margin-bottom: 50px;
+    }
+
+    &__add-to-cart {
+        background: var(--btn-bg-color);
+        border: 1px solid var(--btn-bg-color);
+        padding: 9px 20px;
+    }
+
+    &__quick-order {
+        background: transparent;
+        border: 1px solid var(--accent-color);
+        padding: 9px 23px;
+        border: 1px solid var(--accent-color);
+        border-radius: 24px;
+        transition: background-color .5s ease, color .5s ease;
+
+        @media(any-hover: hover) {
+            &:hover {
+                background-color: var(--accent-color);
+                color: #FFF;
+                transition: background-color .5s ease, color .5s ease;
+            }
+        }
+    }
+
+    &-tabs__btns {
+        @include flexbox();
+    }
+
+    &-tabs__btn {
+        @include font(16px, 20px, false, 500);
+        background-color: var(--bg-color-2);
+    }
+
+    &-tabs__btn--active {
+        background-color: #42516E;
+        color: #FFFFFF;
+    }
+
+    &-tabs__btn-characteristics {
+        border-radius: 5px 5px 0px 0px;
+        padding: 11px 26px;
+    }
+
+    &-tabs__btn-documentation {
+        border-radius: 0px 5px 0px 0px;
+        padding: 11px 18px;
+    }
+
+    &__characteristics {
+        @include font(14px, 49px);
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    &__characteristics-row:not(:last-child) {
+        border-bottom: 1px dashed var(--bg-color-2);
+    }
+
+    &__documentation {
+        @include flexbox(false, false, 17px, column);
+        margin-top: 26px;
+        margin-bottom: 159px;
+    }
+
+    &__documentation-link {
+        @include flexbox(false, center, 4px);
+    }
+
+    &__documentation-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__documentation-name {
+        @include font(16px, 20px, false, 500);
+    }
+}

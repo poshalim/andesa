@@ -1,0 +1,198 @@
+.ordering {
+    padding: 14px 0 49px;
+    overflow: hidden;
+
+    &__breadcrumbs {
+        margin-bottom: 6px;
+    }
+
+    &__title {
+        @include font(40px, 49px, false, 400);
+        margin-bottom: 26px;
+    }
+
+    &-tabs__inner {
+        max-width: 699px;
+        width: 100%;
+    }
+
+    &__subtitle {
+        @include font(18px, 22px, false, 600);
+    }
+
+    &-tabs__btns {
+        @include flexbox(false, center, 34px);
+        background-color: var(--bg-color);
+        padding: 19px 0 19px 22px;
+        margin-top: 15px;
+        margin-bottom: 26px;
+    }
+
+    &-tabs__btn {
+        @include font(12px, 10px, false, 500);
+        @include flexbox(false, center, 8px);
+        cursor: pointer;
+    }
+
+    &-tabs__btn--active {
+        color: var(--accent-color);
+
+        & .ordering__type-checked {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+
+        & .ordering__checked-icon {
+            display: block;
+        }
+    }
+
+    &__type-checked {
+        width: 12px;
+        height: 12px;
+        border: 1px solid var(--text-color-second);
+        position: relative;
+    }
+
+    &__checked-icon {
+        position: absolute;
+        top: -4px;
+        left: -1px;
+        display: none;
+    }
+
+    &__input-container {
+        margin-top: 22px;
+        margin-bottom: 31px;
+        @include flexbox(false, false, 16px, column);
+    }
+
+    &__input-group {
+        @include flexbox(false, false, 12px, column);
+    }
+
+    &__label {
+        @include font(12px, 15px, false, 500);
+    }
+
+    &__input,
+    &__textarea {
+        border: 1px solid var(--bg-color-2);
+        width: 100%;
+        height: 45px;
+        @include font(12px, 15px, false, 500);
+        padding-left: 21px;
+
+        &::placeholder {
+            color: var(--text-color-second);
+        }
+
+    }
+
+    &__textarea {
+        padding-top: 15px;
+        height: 74px;
+        font-family: 'Montserrat';
+        resize: none;
+    }
+
+    &__files {
+        margin-bottom: 19px;
+    }
+
+    &__file {
+        @include flexbox(false, center, 10px);
+        @include font(16px, 20px, false, 500);
+    }
+
+    &__file-icon {
+        width: 20px;
+        height: 18px;
+    }
+
+    &__addFile {
+        @include font(14px, 17px, var(--accent-color));
+        text-decoration-line: underline;
+        margin-bottom: 45px;
+    }
+
+    &__cart {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 21px 21px 28px;
+        width: 388px;
+        transform: translateX(-18px);
+        margin: 0 auto;
+    }
+
+    &__subtitle-container {
+        @include flexbox(space-between, center);
+        padding-bottom: 15px;
+    }
+
+    &__change-btn {
+        @include font(14px, 17px, var(--accent-color));
+        text-decoration-line: underline;
+    }
+
+    &__items {
+        @include flexbox(false, false, 10px, column);
+        border-bottom: 1px solid var(--bg-color-2);
+        border-top: 1px solid var(--bg-color-2);
+        padding: 20px 0 10px;
+        margin-bottom: 8px;
+    }
+
+    &-item {
+        @include flexbox(space-between, center);
+        padding-bottom: 9px;
+
+        &:not(:last-child) {
+            border-bottom: 1px dashed var(--bg-color-2);
+        }
+    }
+
+    &-item__img {
+        height: 40px;
+        width: 40px;
+        border-radius: 4px;
+    }
+
+    &-item__info {
+        width: 190px;
+    }
+
+    &-item__name {
+        @include font(14px, 17px);
+        margin-bottom: 3px;
+    }
+
+    &-item__code {
+        @include font(12px, 15px, false, 800);
+    }
+
+    &-item__sum {
+        width: 80px;
+    }
+
+    &-item__price {
+        @include font(14px, 17px, #000, 600);
+        margin-bottom: 3px;
+    }
+
+    &-item__amount {
+        @include font(14px, 17px, #000);
+    }
+
+    &__total-sum {
+        @include font(18px, 22px, var(--accent-color), 600);
+        text-align: right;
+        margin-top: 24px;
+        margin-bottom: 26px;
+    }
+
+    &__checkout-btn {
+        margin-left: auto;
+        padding: 10px 21px;
+    }
+}

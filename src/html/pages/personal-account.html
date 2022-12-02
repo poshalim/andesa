@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../layouts/head.html', {
+"title": "Личный кабинет",
+"style": "personal-account"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('../layouts/header.html', {})
+        <main class="main">
+            <section class="personal-account">
+                <div class="container">
+                    <h1 class="personal-account__title">Личный кабинет</h1>
+                    <div class="personal-account-tabs__wrapper tabs__wrapper">
+                        <div class="personal-account__head">
+                            <div class="personal-account-tabs__btns tabs__btns">
+                                <button class="personal-account-tabs__btn personal-account-tabs__btn--active tabs__btn"
+                                    data-tab-btn-number="1">История заказов</button>
+                                <button class="personal-account-tabs__btn tabs__btn"
+                                    data-tab-btn-number="2">Профиль</button>
+                            </div>
+                            <div class="personal-account-tabs__item tabs__tab-item" data-tab-content-number="1">
+                                <div class="personal-account__choice">
+                                    <div class="personal-account__choice-date">
+                                        <button class="personal-account__filter-date">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1 8C1 6.11438 1 5.17157 1.58579 4.58579C2.17157 4 3.11438 4 5 4H15C16.8856 4 17.8284 4 18.4142 4.58579C19 5.17157 19 6.11438 19 8V8H1V8Z"
+                                                    fill="#7E869E" fill-opacity="0.25" />
+                                                <rect x="1" y="4" width="18" height="15" rx="2" stroke="#1F2324"
+                                                    stroke-width="1.2" />
+                                                <path d="M5 1L5 4" stroke="#1F2324" stroke-width="1.2"
+                                                    stroke-linecap="round" />
+                                                <path d="M15 1L15 4" stroke="#1F2324" stroke-width="1.2"
+                                                    stroke-linecap="round" />
+                                                <rect x="5" y="10" width="4" height="2" rx="0.5" fill="#1F2324" />
+                                                <rect x="5" y="14" width="4" height="2" rx="0.5" fill="#1F2324" />
+                                                <rect x="11" y="10" width="4" height="2" rx="0.5" fill="#1F2324" />
+                                                <rect x="11" y="14" width="4" height="2" rx="0.5" fill="#1F2324" />
+                                            </svg>
+                                            <span>01.01.2022 - 01.12.2022</span>
+                                        </button>
+                                        <div class="personal-account__sort-date">
+                                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.64645 5.35355C3.84171 5.54882 4.15829 5.54882 4.35355 5.35355L7.53553 2.17157C7.7308 1.97631 7.7308 1.65973 7.53553 1.46447C7.34027 1.2692 7.02369 1.2692 6.82843 1.46447L4 4.29289L1.17157 1.46447C0.976311 1.2692 0.659728 1.2692 0.464466 1.46447C0.269204 1.65973 0.269204 1.97631 0.464466 2.17157L3.64645 5.35355ZM3.5 -2.18557e-08L3.5 5L4.5 5L4.5 2.18557e-08L3.5 -2.18557e-08Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="personal-account__choice-status">
+                                        <button class="personal-account__filter-status">Выполнен</button>
+                                        <div class="personal-account__sort-status">
+                                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3.64645 5.35355C3.84171 5.54882 4.15829 5.54882 4.35355 5.35355L7.53553 2.17157C7.7308 1.97631 7.7308 1.65973 7.53553 1.46447C7.34027 1.2692 7.02369 1.2692 6.82843 1.46447L4 4.29289L1.17157 1.46447C0.976311 1.2692 0.659728 1.2692 0.464466 1.46447C0.269204 1.65973 0.269204 1.97631 0.464466 2.17157L3.64645 5.35355ZM3.5 -2.18557e-08L3.5 5L4.5 5L4.5 2.18557e-08L3.5 -2.18557e-08Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal-account-tabs__item tabs__tab-item" data-tab-content-number="1">
+                            <ul class="personal-account__items">
+                                <li class="personal-account__item">
+                                    <a class="personal-account-item__link" href="order.html">
+                                        <p class="personal-account-item__number">Заказ №ц768858</p>
+                                        <p class="personal-account-item__status personal-account-item__status--success">
+                                            Выполнен
+                                        </p>
+                                        <div class="personal-account-item__footer">
+                                            <p class="personal-account-item__date">от 23.12.2022</p>
+                                            <p class="personal-account-item__sum">60 000 р.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="personal-account__item">
+                                    <a class="personal-account-item__link" href="order.html">
+                                        <p class="personal-account-item__number">Заказ №ц768858</p>
+                                        <p class="personal-account-item__status personal-account-item__status--pending">
+                                            Ожидает
+                                            оплаты</p>
+                                        <div class="personal-account-item__footer">
+                                            <p class="personal-account-item__date">от 23.12.2022</p>
+                                            <p class="personal-account-item__sum">60 000 р.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="personal-account__item">
+                                    <a class="personal-account-item__link" href="order.html">
+                                        <p class="personal-account-item__number">Заказ №ц768858</p>
+                                        <p
+                                            class="personal-account-item__status personal-account-item__status--processing">
+                                            В
+                                            обработке</p>
+                                        <div class="personal-account-item__footer">
+                                            <p class="personal-account-item__date">от 23.12.2022</p>
+                                            <p class="personal-account-item__sum">60 000 р.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="personal-account__item">
+                                    <a class="personal-account-item__link" href="order.html">
+                                        <p class="personal-account-item__number">Заказ №ц768858</p>
+                                        <p
+                                            class="personal-account-item__status personal-account-item__status--delivering">
+                                            Передан в доставку\выполнен</p>
+                                        <div class="personal-account-item__footer">
+                                            <p class="personal-account-item__date">от 23.12.2022</p>
+                                            <p class="personal-account-item__sum">60 000 р.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="personal-account-tabs__item tabs__tab-item" data-tab-content-number="2">
+                            <div class="personal-account__profile profile">
+                                <button class="profile__btn-change">Изменить</button>
+                                <div class="profile__data">
+                                    <div class="profile__data-group">
+                                        <p class="profile__label">ФИО</p>
+                                        <p class="profile__value">Иванов Иван Иванович</p>
+                                    </div>
+                                    <div class="profile__data-group">
+                                        <p class="profile__label">E-mail</p>
+                                        <p class="profile__value">test@mail.ru</p>
+                                    </div>
+                                    <div class="profile__data-group">
+                                        <p class="profile__label">Телефон</p>
+                                        <p class="profile__value">+7 (999) 999-99-99</p>
+                                    </div>
+                                    <div class="profile__data-group">
+                                        <p class="profile__label">Адрес доставки</p>
+                                        <p class="profile__value">пр. Королёва, 61, Санкт-Петербург, 194356</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        @@include('../layouts/footer.html', {})
+    </div>
+
+    <script src="../js/app.min.js"></script>
+</body>
+
+</html>

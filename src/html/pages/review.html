@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../layouts/head.html', {
+"title": "Отзыв",
+"style": "review"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('../layouts/header.html', {})
+        <main class="main">
+            <section class="review">
+                <div class="container">
+                    <div class="breadcrumbs reviews__bread-crumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item"><a href="reviews.html" class="breadcrumbs__link">Отзывы</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 class="review__title">Отзывы</h1>
+                    <div class="review__item">
+                        <img class="review__doc" src="@img/reviews/doc-1.png" alt="документ">
+                        <div class="review__company">
+                            <img class="review__company-logo" src="@img/reviews/logo-company-1.png"
+                                alt="logo company">
+                            <span class="review__company-name">Компания Ромашка</span>
+                        </div>
+
+                        <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor
+                            sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua.Lorem ipsum dolor sit amet, consectetur ectetur Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua.Lorem ipsum dolor sit amet, consectetur</p>
+                        <div class="review__author">
+                            <p class="review__author-position">Коммерческий директор</p>
+                            <p class="review__author-name">Дмитрий Иванов</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('../layouts/footer.html', {})
+    </div>
+
+    <script src="../js/app.min.js"></script>
+</body>
+
+</html>

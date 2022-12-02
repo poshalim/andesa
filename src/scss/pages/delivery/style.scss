@@ -1,0 +1,17 @@
+.delivery {
+    padding: 14px 0 0;
+
+    &__breadcrumbs {
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        @include font(40px, 49px, false, 400);
+        margin-bottom: 18px;
+    }
+
+    &__text {
+        @include font(14px, 17px, #000);
+        margin-bottom: 56px;
+    }
+}

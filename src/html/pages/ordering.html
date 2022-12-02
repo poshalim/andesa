@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../layouts/head.html', {
+"title": "Оформление заказа",
+"style": "ordering"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('../layouts/header.html', {})
+        <main class="main">
+            <section class="ordering">
+                <div class="container">
+                    <div class="breadcrumbs ordering__breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item"><a href="catalog.html" class="breadcrumbs__link">Каталог</a>
+                            </li>
+                            <li class="breadcrumbs__item"><a href="product.html" class="breadcrumbs__link">ИБП
+                                    CyberPower
+                                    BU600E</a></li>
+                            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Оформление заказа</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ordering-tabs__wrapper tabs__wrapper">
+                        <div class="ordering-tabs__inner">
+                            <h1 class="ordering__title">Оформление заказа</h1>
+                            <h3 class="ordering__subtitle">Тип покупателя и регион доставки</h3>
+                            <div class="ordering-tabs__btns tabs__btns">
+                                <div class="ordering-tabs__btn ordering-tabs__btn--active tabs__btn"
+                                    data-tab-btn-number="1">
+                                    <div class="ordering__type-checked">
+                                        <svg class="ordering__checked-icon" width="15" height="14" viewBox="0 0 15 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 9L5 12L14 1" stroke="white" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                    <span>Физическое лицо</span>
+                                </div>
+                                <div class="ordering-tabs__btn tabs__btn" data-tab-btn-number="2">
+                                    <div class="ordering__type-checked">
+                                        <svg class="ordering__checked-icon" width="15" height="14" viewBox="0 0 15 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 9L5 12L14 1" stroke="white" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                    <span>Юридическое лицо</span>
+                                </div>
+                            </div>
+                            <h3 class="ordering__subtitle">Покупатель</h3>
+                            <div class="ordering-tabs__items tabs__items">
+                                <form class="ordering-tabs__item tabs__tab-item" id="ordering-form-individual"
+                                    data-tab-content-number="1">
+                                    <fieldset class="ordering__input-container">
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="fio">ФИО</label>
+                                            <input class="ordering__input form__input" id="fio" type="text"
+                                                placeholder="Введите Ваше ФИО">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="email">E-mail</label>
+                                            <input class="ordering__input form__input" id="email" type="email"
+                                                placeholder="Введите адрес электронной почты">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="phone-number">Телефон</label>
+                                            <input class="ordering__input form__input" id="phone-number" type="tel"
+                                                placeholder="+7 -- --- --- --">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="address">Адрес доставки</label>
+                                            <input class="ordering__input form__input" id="address" type="text"
+                                                placeholder="Введите адрес доставки">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="comment">Комментарий к заказу</label>
+                                            <textarea class="ordering__textarea" id="comment"
+                                                placeholder="Здесь Вы можете указать Ваши пожелания...."></textarea>
+                                        </fieldset>
+                                    </fieldset>
+                                </form>
+                                <form class="ordering-tabs__item tabs__tab-item" id="ordering-form-company"
+                                    data-tab-content-number="2">
+                                    <fieldset class="ordering__input-container">
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="ordering-name-company">Название
+                                                компании</label>
+                                            <input class="ordering__input form__input" id="ordering-name-company"
+                                                type="text" placeholder="Введите название компании">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="ordering-legal-address">Юридический
+                                                адрес</label>
+                                            <input class="ordering__input form__input" id="ordering-legal-address"
+                                                type="text" placeholder="Введите юридический адрес">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="inn-company">ИНН</label>
+                                            <input class="ordering__input form__input" id="inn-company" type="number"
+                                                placeholder="Введите ИНН">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="kpp-company">КПП</label>
+                                            <input class="ordering__input form__input" id="kpp-company" type="number"
+                                                placeholder="Введите КПП">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="contact-person-company">Контактное
+                                                лицо</label>
+                                            <input class="ordering__input form__input" id="contact-person-company"
+                                                type="text" placeholder="Введите Ваше ФИО">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="email-company">E-mail</label>
+                                            <input class="ordering__input form__input" id="email-company"
+                                                type="email" placeholder="Введите адрес электронной почты">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="phone-number-company">Телефон</label>
+                                            <input class="ordering__input form__input" id="phone-number-company"
+                                                type="tel" placeholder="+7 -- --- --- --">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="address-company">Адрес доставки</label>
+                                            <input class="ordering__input form__input" id="address-company" type="text"
+                                                placeholder="Введите адрес доставки">
+                                        </fieldset>
+                                        <fieldset class="ordering__input-group form__input-group">
+                                            <label class="ordering__label" for="comment-company">Комментарий к
+                                                заказу</label>
+                                            <textarea class="ordering__textarea" id="comment-company"
+                                                placeholder="Здесь Вы можете указать Ваши пожелания...."></textarea>
+                                        </fieldset>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="ordering__files">
+                                <a class="ordering__file" href="#">
+                                    <svg class="ordering__file-icon" width="16" height="19" viewBox="0 0 16 19"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="14" height="17" rx="2" fill="#7E869E"
+                                            fill-opacity="0.25" stroke="#1F2324" stroke-width="1.2" />
+                                        <path d="M5 6H11" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
+                                        <path d="M5 10H11" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
+                                        <path d="M5 14H9" stroke="#1F2324" stroke-width="1.2" stroke-linecap="round" />
+                                    </svg>
+                                    <p>Документ.pdf</p>
+                                </a>
+                            </div>
+                            <a class="ordering__addFile" href="#">+ Добавить документ</a>
+                        </div>
+                        <div class="ordering__cart">
+                            <div class="ordering__subtitle-container">
+                                <h3 class="ordering__subtitle">Ваш заказ</h3>
+                                <a class="ordering__change-btn" href="cart.html">Изменить</a>
+                            </div>
+                            <ul class="ordering__items">
+                                <li class="spinner-wrapper"></li>
+                            </ul>
+                            <p class="ordering__total-sum"></p>
+                            <button class="ordering__checkout-btn ordering__submit btn"
+                                form="ordering-form-individual">Оформить
+                                заказ</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('../layouts/footer.html', {})
+    </div>
+
+    <script src="../js/app.min.js"></script>
+</body>
+
+</html>

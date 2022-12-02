@@ -1,0 +1,52 @@
+@include laptop {
+    .reviews {
+        padding: 35px 0 99px;
+
+        &__bread-crumbs {
+            margin-bottom: 26px;
+        }
+
+        &__title {
+            @include font(40px, 49px);
+            margin-bottom: 29px;
+        }
+
+        &__items {
+            gap: 30px;
+        }
+
+        &__item-link {
+            @include flexbox(center, center, false, column);
+        }
+
+        &__item {
+            padding: 51px 12px 27px;
+            max-width: 283px;
+        }
+
+        &__company-logo {
+            width: 162px;
+            height: 61px;
+            margin-bottom: 47px;
+        }
+
+        &__company-name {
+            position: static;
+            order: 2;
+        }
+
+        &__text {
+            padding: 0;
+            order: 1;
+        }
+
+        &__author {
+            padding: 0;
+            margin-bottom: 16px;
+        }
+
+        &__author-position {
+            margin-bottom: 9px;
+        }
+    }
+}
