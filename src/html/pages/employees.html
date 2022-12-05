@@ -9,7 +9,7 @@
     <div class="wrapper">
         @@include('../layouts/header.html', {})
         <main class="main">
-            <section class="employees">
+            <section class="employees" data-aos="zoom-in-left">
                 <div class="container">
                     <div class="breadcrumbs employees__bread-crumbs">
                         <ul class="breadcrumbs__list">
@@ -26,7 +26,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna </p>
                     <ul class="employees__items">
-                        <li class="employees__item">
+                        <li class="employees__item" data-aos="zoom-in-left">
                             <div class="employees__item-top">
                                 <img class="employees__item-photo" src="@img/employees/photo-1.jpg"
                                     alt="фото сотрудника">
@@ -40,6 +40,19 @@
                             </p>
                         </li>
                         <li class="employees__item">
+                            <div class="employees__item-top" data-aos="zoom-in-left">
+                                <img class="employees__item-photo" src="@img/employees/photo-1.jpg"
+                                    alt="фото сотрудника">
+                                <div class="employees__item-bio">
+                                    <p class="employees__author-name">Дмитрий Иванов</p>
+                                    <p class="employees__author-position">Коммерческий директор</p>
+                                </div>
+                            </div>
+                            <p class="employees__item-text">Lorem ipsum dolor sit amet, consectetur
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            </p>
+                        </li>
+                        <li class="employees__item" data-aos="zoom-in-left">
                             <div class="employees__item-top">
                                 <img class="employees__item-photo" src="@img/employees/photo-1.jpg"
                                     alt="фото сотрудника">
@@ -52,20 +65,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
                             </p>
                         </li>
-                        <li class="employees__item">
-                            <div class="employees__item-top">
-                                <img class="employees__item-photo" src="@img/employees/photo-1.jpg"
-                                    alt="фото сотрудника">
-                                <div class="employees__item-bio">
-                                    <p class="employees__author-name">Дмитрий Иванов</p>
-                                    <p class="employees__author-position">Коммерческий директор</p>
-                                </div>
-                            </div>
-                            <p class="employees__item-text">Lorem ipsum dolor sit amet, consectetur
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                            </p>
-                        </li>
-                        <li class="employees__item">
+                        <li class="employees__item" data-aos="zoom-in-left">
                             <div class="employees__item-top">
                                 <img class="employees__item-photo" src="@img/employees/photo-1.jpg"
                                     alt="фото сотрудника">
@@ -85,7 +85,7 @@
         @@include('../layouts/footer.html', {})
     </div>
 
-    <script src="../js/app.min.js"></script>
+    <script src="js/app.min.js"></script>
 </body>
 
 </html>

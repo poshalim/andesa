@@ -1,6 +1,16 @@
+@include tablet {
+    .product__container {
+        padding: 0 50px;
+    }
+}
+
 @include laptop {
     .product {
         padding: 34px 0 133px;
+
+        &__container {
+            padding: 0;
+        }
 
         &__breadcrumbs {
             margin-bottom: 27px;

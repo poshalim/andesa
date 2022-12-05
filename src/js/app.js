@@ -2,6 +2,11 @@ import { isWebp } from "./helpers/isWebp.js"
 import { spinner } from './components/Spinner.js'
 import { getProducts } from './store/products.js'
 import { render } from './helpers/render.js'
+import AOS from 'aos';
+AOS.init({
+    delay: 200,
+    once: true,
+});
 
 
 
@@ -22,14 +27,27 @@ init()
 
 
 if (window.location.pathname === '/contacts.html') {
-    let myMap;
-    ymaps.ready(function () {
-        myMap = new ymaps.Map("map", {
-            center: [59.97, 30.33],
-            zoom: 16
-        })
-    })
+    // let myMap;
+    // ymaps.ready(function () {
+    //     myMap = new ymaps.Map("map", {
+    //         center: [59.97, 30.33],
+    //         zoom: 16
+    //     })
+    // })
+
+    let map;
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: 59.97, lng: 30.33 },
+            zoom: 16,
+        });
+    }
+
+    window.initMap = initMap;
 }
+
+
 
 
 

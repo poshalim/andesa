@@ -70,13 +70,13 @@ export default class CartPage {
               <div class="cartPage-item__footer">
                 <div class="cartPage-item__amount">
                   <button class="cartPage-item__amount-btn cartPage-item__amount-minus">-</button>
-                  <div class="cartPage-">${amount}</div>
+                  <div class="cartPage-item__amount-value">${amount}</div>
                   <button class="cartPage-item__amount-btn cartPage-item__amount-plus">+</button>
                 </div>
                 <p class="cartPage-item__item-sum">${(amount * currentPrice).toLocaleString()} р.</p>
               </div>
             <div class="cartPage-item__remove-from-cart">
-              <img src="../img/cart/cart-icon.svg" alt="кнопка удаления товара">
+              <img class=cartPage-item__remove-icon src="../img/cart/cart-icon.svg" alt="кнопка удаления товара">
             </div>
           </div>
         </li>

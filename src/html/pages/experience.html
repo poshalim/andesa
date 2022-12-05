@@ -19,15 +19,15 @@
                         </ul>
                     </div>
                     <h1 class="experience__title">Опыт</h1>
-                    <div class="experience-tabs__wrapper tabs__wrapper">
+                    <div class="experience-tabs__wrapper tabs__wrapper" data-aos="zoom-in-left">
                         <div class="experience-tabs__btns tabs__btns">
                             <button class="experience-tabs__btn tabs__btn experience-tabs__btn--active"
-                                data-tab-btn-number="1">Все</button>
+                                data-tab-btn-number="1" data-show-all>Все</button>
                             <button class="experience-tabs__btn tabs__btn" data-tab-btn-number="2">Металлургия</button>
                             <button class="experience-tabs__btn tabs__btn" data-tab-btn-number="3">Ритейл</button>
                             <button class="experience-tabs__btn tabs__btn" data-tab-btn-number="4">Услуги</button>
                         </div>
-                        <div class="experience-tabs__items tabs__items experience-accordion__wrapper accordion-wrapper">
+                        <div class="experience-tabs__items tabs__items experience-accordion__wrapper accordion-wrapper experience__items">
                             <div class="experience-tabs__item tabs__tab-item" data-tab-content-number="1">
                                 <ul class="experience__items accordion">
                                     <li class="experience__item accordion__item">
@@ -351,7 +351,7 @@
         @@include('../layouts/footer.html', {})
     </div>
 
-    <script src="../js/app.min.js"></script>
+    <script src="js/app.min.js"></script>
 </body>
 
 </html>

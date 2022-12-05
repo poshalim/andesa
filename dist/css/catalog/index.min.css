@@ -1238,7 +1238,7 @@ input {
   left: 0;
   right: 0;
   background: url("../../img/subscribe/bg-1.svg") no-repeat;
-  width: 402px;
+  background-size: cover;
   height: 205px;
   z-index: 1;
 }
@@ -1628,9 +1628,17 @@ input {
   font-weight: 500;
 }
 
+@media (min-width: 640px) {
+  .product__container {
+    padding: 0 50px;
+  }
+}
 @media (min-width: 1260px) {
   .product {
     padding: 34px 0 133px;
+  }
+  .product__container {
+    padding: 0;
   }
   .product__breadcrumbs {
     margin-bottom: 27px;
@@ -1694,7 +1702,7 @@ input {
 .catalog__title {
   font-size: 36px;
   line-height: 44px;
-  color: 400;
+  font-weight: 400;
   margin-bottom: 21px;
 }
 .catalog__items {

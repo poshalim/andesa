@@ -1,7 +1,9 @@
-@include laptop {
+@include tablet {
     .news {
         padding: 33px 0 103px;
-
+        &__container {
+            padding: 0 22px;
+        }
         &__breadcrumbs {
             margin-bottom: 25px;
         }

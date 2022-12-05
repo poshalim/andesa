@@ -35,6 +35,10 @@
         background-color: var(--btn-bg-color);
     }
 
+    &-tabs__item[data-tab-content-number] {
+        display: block;
+    }
+
     &__items {
         @include flexbox(false, false, 40px, column);
     }

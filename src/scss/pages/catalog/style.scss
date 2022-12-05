@@ -6,7 +6,7 @@
     }
 
     &__title {
-        @include font(36px, 44px, 400);
+        @include font(36px, 44px, false, 400);
         margin-bottom: 21px;
     }
 

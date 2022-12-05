@@ -29,28 +29,50 @@ export class Tabs {
         const tabsBtn = this.#tabsBtns.querySelectorAll(`.${this.#blockClassName}-tabs__btn`) // кнопки для переключения вкладок
         const classActive = `${this.#blockClassName}-tabs__btn--active` // класс активной кнопки
         const targetButton = target.closest(`.${this.#blockClassName}-tabs__btn`) // кнопка по которой совершено нажатие
-        if (targetButton) {
-            tabsBtn.forEach(tabBtn => {
-                if (targetButton === tabBtn) {
-                    targetButton.classList.add(classActive) // добавление активной вкладки для кнопки по которой совершено нажатие
-                    this.#tabsContent.forEach(tabContent => { // перебор всех вкладок с контентом
-                        if (tabContent.dataset.tabContentNumber === targetButton.dataset.tabBtnNumber) {
-                            tabContent.style.display = 'block' // отображение активной вкладки
-                            if (this.#isForm) {
-                                const formBtnSubmit = document.querySelector(`.${this.#blockClassName}__submit`)
-                                formBtnSubmit.setAttribute('form', tabContent.id) // привязка кнопки к активной форме
-                                form.clearFields()
-                            }
-                        } else {
-                            tabContent.style.display = 'none'
-                        }
-                    })
+        if (!targetButton) return
 
-                } else {
-                    tabBtn.classList.remove(classActive)
-                }
-            })
-        }
+
+
+
+        tabsBtn.forEach(tabBtn => {
+            if (tabBtn === targetButton) {
+                targetButton.classList.add(classActive) // добавление активной класса для кнопки по которой совершено нажатие
+            }
+            else {
+                tabBtn.classList.remove(classActive) // удаление активного класса у остальных кнопок при переключении
+            }
+
+            if (targetButton.hasAttribute('data-show-all')) {
+                this.#tabsContent.forEach(tabContent => {
+                    tabContent.style.display = 'block' // отображение всех вкладок при нажатии на кнопку "Все"
+                })
+                return
+            }
+
+
+            if (targetButton === tabBtn) {
+                this.#tabsContent.forEach(tabContent => { // перебор всех вкладок с контентом
+
+                    if (tabContent.dataset.tabContentNumber === targetButton.dataset.tabBtnNumber) {
+                        tabContent.style.display = 'block' // отображение активной вкладки
+
+                        if (this.#isForm) {
+                            const formBtnSubmit = document.querySelector(`.${this.#blockClassName}__submit`)
+                            formBtnSubmit.setAttribute('form', tabContent.id) // привязка кнопки к активной форме
+                            form.clearFields()
+                        }
+                    }
+
+                    else {
+                        tabContent.style.display = 'none'
+                    }
+                })
+            }
+
+        })
+
+
+
     }
 }
 

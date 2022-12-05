@@ -8,7 +8,9 @@ class PersistanceStorage {
 
     getProducts() {
         const productsLocalStorage = localStorage.getItem(this.#keyName)
-        if (productsLocalStorage !== null) return JSON.parse(productsLocalStorage)
+        if (productsLocalStorage !== null) {
+            return JSON.parse(productsLocalStorage)
+        }
         else return {}
     }
 
@@ -32,7 +34,7 @@ class PersistanceStorage {
         return { pushProduct, productsInTheCart }
     }
 
-    
+
     increaseAmountProduct(code) {
         let productsInTheCart = this.getProducts()
         productsInTheCart[code] += 1
