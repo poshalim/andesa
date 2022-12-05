@@ -68,22 +68,20 @@
     transform: translateX(-50%);
     cursor: pointer;
 
-    @media(any-hover: hover) {
-        &:hover {
-            & .cart__icon path {
-                fill: #FFF;
-                transition: fill .5s ease;
-            }
+    &:active {
+        & .cart__icon path {
+            fill: #FFF;
+            transition: fill .5s ease;
+        }
 
-            & .cart__bg path {
-                fill: var(--accent-color);
-                transition: fill .5s ease;
-            }
+        & .cart__bg path {
+            fill: var(--accent-color);
+            transition: fill .5s ease;
+        }
 
-            & .cart__amount-items {
-                color: #FFF;
-                transition: color .5s ease, background-color .5s ease;
-            }
+        & .cart__amount-items {
+            color: #FFF;
+            transition: color .5s ease, background-color .5s ease;
         }
     }
 

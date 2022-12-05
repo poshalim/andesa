@@ -11,7 +11,6 @@ export const html = () => {
             })
         ))
         .pipe(fileinclude())
-        // .pipe(nunjucksRender())
         .pipe(app.plugins.replace(/@img\//g, 'img/'))
         .pipe(
             app.plugins.if(

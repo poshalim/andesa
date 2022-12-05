@@ -6,6 +6,7 @@ export const getProducts = async () => {
         const response = await fetch('./files/server/products.json')
         if (!response.ok) throw new Error("Ошибка в получении данных о продуктах")
         products = await response.json()
+        return true
     } catch (error) {
         console.log(error)
     }
