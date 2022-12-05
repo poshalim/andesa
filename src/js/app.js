@@ -4,7 +4,6 @@ import { getProducts } from './store/products.js'
 import { render } from './helpers/render.js'
 import AOS from 'aos';
 AOS.init({
-    delay: 200,
     once: true,
 });
 
