@@ -1156,7 +1156,7 @@ input {
   left: 0;
   right: 0;
   background: url("../../img/subscribe/bg-1.svg") no-repeat;
-  width: 402px;
+  background-size: cover;
   height: 205px;
   z-index: 1;
 }

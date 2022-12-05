@@ -1156,7 +1156,7 @@ input {
   left: 0;
   right: 0;
   background: url("../../img/subscribe/bg-1.svg") no-repeat;
-  width: 402px;
+  background-size: cover;
   height: 205px;
   z-index: 1;
 }
@@ -1447,9 +1447,12 @@ input {
   display: none;
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 640px) {
   .news {
     padding: 33px 0 103px;
+  }
+  .news__container {
+    padding: 0 22px;
   }
   .news__breadcrumbs {
     margin-bottom: 25px;
