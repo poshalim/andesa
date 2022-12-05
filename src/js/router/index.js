@@ -4,7 +4,7 @@ import { productPage } from "../modules/ProductPage.js"
 // роутинг некоторых страниц
 export const locationResolver = (location, code) => {
     switch (location) {
-        case "/catalog.html":
+        case "catalog.html":
             catalogPage.init() // рендер и инициализация элементов на странице
 
             break

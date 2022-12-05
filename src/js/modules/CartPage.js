@@ -76,7 +76,7 @@ export default class CartPage {
                 <p class="cartPage-item__item-sum">${(amount * currentPrice).toLocaleString()} р.</p>
               </div>
             <div class="cartPage-item__remove-from-cart">
-              <img class=cartPage-item__remove-icon src="../img/cart/cart-icon.svg" alt="кнопка удаления товара">
+              <img class=cartPage-item__remove-icon src="./img/cart/cart-icon.svg" alt="кнопка удаления товара">
             </div>
           </div>
         </li>

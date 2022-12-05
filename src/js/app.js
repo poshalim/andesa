@@ -26,14 +26,10 @@ const init = async () => {
 init()
 
 
-if (window.location.pathname === '/contacts.html') {
-    // let myMap;
-    // ymaps.ready(function () {
-    //     myMap = new ymaps.Map("map", {
-    //         center: [59.97, 30.33],
-    //         zoom: 16
-    //     })
-    // })
+
+
+const path = window.location.pathname.split('/')
+if (path[path.length - 1] === 'contacts.html') {
 
     let map;
 

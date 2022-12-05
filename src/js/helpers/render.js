@@ -154,9 +154,9 @@ export const render = () => {
     window.addEventListener('load', () => { // роутинг некоторых страниц
         let location = window.location.hash
         let code = Object.keys(products).filter(code => location.split('/').some(el => code === el)) // код товара из URL
-
+        const path = window.location.pathname.split('/')
         if (location) locationResolver(location, ...code)
-        else if (window.location.pathname === '/catalog.html') locationResolver(window.location.pathname)
+        else if (path[path.length - 1] === 'catalog.html') locationResolver(path[path.length - 1])
     })
 
 
@@ -168,8 +168,9 @@ export const render = () => {
         form.clearFields()
         modal.closeAll()
 
+        const path = window.location.pathname.split('/')
         if (location) locationResolver(location, ...code)
-        else if (window.location.pathname === '/catalog.html' && !location) locationResolver(window.location.pathname)
+        else if (path[path.length - 1] === 'catalog.html' && !location) locationResolver(path[path.length - 1])
     })
 }
 
