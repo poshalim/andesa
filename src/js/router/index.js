@@ -17,5 +17,3 @@ export const locationResolver = (location, code) => {
 export default {
     locationResolver
 }
-
-
