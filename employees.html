@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сотрудники</title>
     <link rel="icon" type="image/svg" href="img/favicon.svg">
-    <link rel="stylesheet" href="css/employees/index.min.css?_v=20221206105800">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20221206105800" rel="stylesheet">
+    <link rel="stylesheet" href="css/employees/index.min.css?_v=20221206162526">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20221206162526" rel="stylesheet">
 </head>
 
 <body>
@@ -20,8 +20,7 @@
                     <img class="header-navigation__logo logo" src="img/header/logo.svg" alt="логотип">
                     <p class="header-navigation__logo-text">Бесперебойные решения</p>
                 </a>
-                <p class="header-navigation__address">Гельсингфорсская ул., 4 корпус 1, Санкт-Петербург, 194044
-                </p>
+                <p class="header-navigation__address">Гельсингфорсская ул., 4 корпус 1, Санкт-Петербург, 194044</p>
                 <div class="header-navigation__cart cart">
                     <svg class="cart__bg" width="182" height="51" viewBox="0 0 182 51" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +59,7 @@
                     </div>
                 </div>
             </div>
-            <div class="header-navigation__menu menu">
+            <div class="header__menu menu">
                 <div class="menu__head">
                     <p class="menu__text">Меню</p>
                     <div class="menu__icon">
@@ -69,31 +68,28 @@
                         <div class="menu__line"></div>
                     </div>
                 </div>
-                <div class="menu__body">
-                    <ul class="menu__items">
+                <nav class="menu__body">
+                    <ul class="menu__list">
                         <li class="menu__item">
                             <a class="menu__link" href="about-company.html">О компании</a>
                             <div class="menu__item-line"></div>
-                            <ul class="menu__list">
-                                <li class="menu__list-item"><a class="menu__list-link" href="reviews.html">Отзывы</a>
+
+                            <ul class="menu__sub-list">
+                                <li class="menu__sub-item"><a class="menu__sub-link" href="reviews.html">Отзывы</a>
                                 </li>
-                                <li class="menu__list-item"><a class="menu__list-link"
+                                <li class="menu__sub-item"><a class="menu__sub-link"
                                         href="employees.html">Сотрудники</a></li>
-                                <li class="menu__list-item"><a class="menu__list-link"
-                                        href="certificates.html">Сертификаты</a>
-                                </li>
+                                <li class="menu__sub-item"><a class="menu__sub-link"
+                                        href="certificates.html">Сертификаты</a></li>
                             </ul>
                         </li>
-                        <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог</a></li>
-                        <li class="menu__item"><a href="services.html" class="menu__link">Услуги</a></li>
-                        <li class="menu__item"><a href="delivery.html" class="menu__link">Оплата /
-                                Доставка</a></li>
-                        <li class="menu__item"><a href="guarantee.html" class="menu__link">Гарантии</a>
-                        </li>
-                        <li class="menu__item"><a href="experience.html" class="menu__link">Опыт</a></li>
-                        <li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
-                        <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a>
-                        </li>
+                        <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог</a></li>
+                        <li class="menu__item"><a class="menu__link" href="services.html">Услуги</a></li>
+                        <li class="menu__item"><a class="menu__link" href="delivery.html">Оплата / Доставка</a></li>
+                        <li class="menu__item"><a class="menu__link" href="guarantee.html">Гарантии</a></li>
+                        <li class="menu__item"><a class="menu__link" href="experience.html">Опыт</a></li>
+                        <li class="menu__item"><a class="menu__link" href="news.html">Новости</a></li>
+                        <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
                     </ul>
                     <div class="header-navigation__connection">
                         <div class="header-navigation__call">
@@ -134,7 +130,6 @@
                             </a>
                         </div>
                     </div>
-
                     <div class="header-navigation__auth">
                         <svg class="header-navigation__auth-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -147,21 +142,11 @@
                         </svg>
                         <button class="header-navigation__auth-btn">Вход</button>
                     </div>
-                    <div class="modal__close menu__close close">
-                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="5.65698" y="4.94971" width="15" height="1" transform="rotate(45 5.65698 4.94971)"
-                                fill="#1F2324" />
-                            <rect x="16.2634" y="5.65686" width="15" height="1" transform="rotate(135 16.2634 5.65686)"
-                                fill="#1F2324" />
-                        </svg>
-                    </div>
-                </div>
+                </nav>
             </div>
         </div>
     </div>
 </header>
-
-
         <main class="main">
             <section class="employees">
                 <div class="container">
@@ -560,7 +545,7 @@
 </div>
     </div>
 
-    <script src="js/app.min.js?_v=20221206105800"></script>
+    <script src="js/app.min.js?_v=20221206162526"></script>
 </body>
 
 </html>
