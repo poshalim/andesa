@@ -49,8 +49,20 @@ class ProductPage {
         productSection.querySelector('.breadcrumbs__product-name').href = `#/product/${code}/`
         productSection.querySelector('.product__name').innerHTML = name
         productSection.querySelector('.product__labels').innerHTML = `${itemLabelHit} ${itemLabelNovetly}`
-        productSection.querySelectorAll('.product__img').forEach(el => el.src = img)
-        productSection.querySelectorAll('.product__img-thumbs').forEach(el => el.src = img)
+        productSection.querySelectorAll('.product__img-wrapper').forEach(el => {
+            const productImg = document.createElement('img')
+            productImg.src = img
+            productImg.classList.add('product__img')
+            productImg.alt = 'фото товара'
+            el.append(productImg)
+        })
+        productSection.querySelectorAll('.product__img-thumbs-wrapper').forEach(el => {
+            const productImgThumbs = document.createElement('img')
+            productImgThumbs.src = img
+            productImgThumbs.classList.add('product__img-thumbs')
+            productImgThumbs.alt = 'фото товара'
+            el.append(productImgThumbs)
+        })
         productSection.querySelector('.product__code').innerHTML = `Артикул: <b>${code}</b>`
         productSection.querySelector('.catalog-item__current-price').innerHTML = `${currentPrice.toLocaleString()} р.`
         productSection.querySelector('.catalog-item__old-price').innerHTML = oldPrice
@@ -60,7 +72,7 @@ class ProductPage {
         app.innerHTML = productSection.outerHTML
 
         this.#swipersInit()
-        this.#clickBuy(code)
+        // this.#clickBuy(code)
     }
 
     #clickBuy(code) {
