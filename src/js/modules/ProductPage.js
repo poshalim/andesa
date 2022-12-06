@@ -72,7 +72,7 @@ class ProductPage {
         app.innerHTML = productSection.outerHTML
 
         this.#swipersInit()
-        // this.#clickBuy(code)
+        this.#clickBuy(code)
     }
 
     #clickBuy(code) {

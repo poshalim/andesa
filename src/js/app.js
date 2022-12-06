@@ -27,8 +27,6 @@ const init = async () => {
 init()
 
 
-
-
 const path = window.location.pathname.split('/')
 if (path[path.length - 1] === 'contacts.html') {
 
