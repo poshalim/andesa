@@ -155,15 +155,11 @@ export const render = () => {
 
 
 
-    window.addEventListener('load', () => { // роутинг некоторых страниц
-        let location = window.location.hash
-        let code = Object.keys(products).filter(code => location.split('/').some(el => code === el)) // код товара из URL
-        const path = window.location.pathname.split('/')
-        if (location) locationResolver(location, ...code)
-        else if (path[path.length - 1] === 'catalog.html') locationResolver(path[path.length - 1])
-    })
-
-
+    let location = window.location.hash // роутинг некоторых страниц
+    let code = Object.keys(products).filter(code => location.split('/').some(el => code === el)) // код товара из URL
+    const path = window.location.pathname.split('/')
+    if (location) locationResolver(location, ...code)
+    else if (path[path.length - 1] === 'catalog.html') locationResolver(path[path.length - 1])
 
 
     window.addEventListener('hashchange', () => { // роутинг некоторых страниц
