@@ -27,20 +27,15 @@ const init = async () => {
 init()
 
 
-const path = window.location.pathname.split('/')
-if (path[path.length - 1] === 'contacts.html') {
 
-    let map;
-
-    function initMap() {
-        map = new google.maps.Map(document.getElementById("map"), {
-            center: { lat: 59.97, lng: 30.33 },
-            zoom: 16,
-        });
-    }
-
-    window.initMap = initMap;
+let map;
+function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 59.97, lng: 30.33 },
+        zoom: 16,
+    });
 }
 
+window.initMap = initMap;
 
 

@@ -9,7 +9,6 @@ import CartPage from '../modules/CartPage.js'
 import { orderingPage } from '../modules/OrderingPage.js'
 import { products } from '../store/products.js'
 import { locationResolver } from '../router/index.js'
-import { toggleElementVisibility } from './toggleElementVisibility.js'
 import { handleTouchStart, handleTouchMove } from '../helpers/swipeClose.js'
 
 
@@ -19,13 +18,18 @@ export const render = () => {
 
     // открытие/закрытие меню
     const menu = document.querySelector('.menu')
-    menu.addEventListener('click', (e) => toggleElementVisibility('menu', 'close', 'menu__body', e))
+    menu.addEventListener('click', ({ target }) => {
+        if (target.closest('.menu__head')) {
+            menu.classList.toggle('menu--active')
+            document.body.classList.toggle('_locked')
+        }
+    })
 
     // закрытие меню свайпом
     const menuBodyBlock = document.querySelector('.menu__body')
     menuBodyBlock.addEventListener('touchstart', handleTouchStart, false)
     menuBodyBlock.addEventListener('touchmove', function (event) {
-        handleTouchMove.call((this), 'right', 'menu__body--active', event)
+        handleTouchMove.call((menu), 'right', 'menu--active', event)
     }, false)
 
 
@@ -150,12 +154,15 @@ export const render = () => {
 
 
 
-    // роутинг некоторых страниц
-    let location = window.location.hash
-    let code = Object.keys(products).filter(code => location.split('/').some(el => code === el)) // код товара из URL
-    const path = window.location.pathname.split('/')
-    if (location) locationResolver(location, ...code)
-    else locationResolver(path[path.length - 1]) // передача в роутер текущей страницы
+
+    window.addEventListener('load', () => { // роутинг некоторых страниц
+        let location = window.location.hash
+        let code = Object.keys(products).filter(code => location.split('/').some(el => code === el)) // код товара из URL
+        const path = window.location.pathname.split('/')
+        if (location) locationResolver(location, ...code)
+        else if (path[path.length - 1] === 'catalog.html') locationResolver(path[path.length - 1])
+    })
+
 
 
 
@@ -167,7 +174,7 @@ export const render = () => {
 
         const path = window.location.pathname.split('/')
         if (location) locationResolver(location, ...code)
-        else locationResolver(path[path.length - 1]) // передача в роутер текущей страницы
+        else if (path[path.length - 1] === 'catalog.html' && !location) locationResolver(path[path.length - 1])
     })
 }
 

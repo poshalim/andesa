@@ -64,6 +64,7 @@
         &-item__info {
             @include flexbox(space-between, center);
             width: 100%;
+            padding: 0;
         }
 
         &-item__code {

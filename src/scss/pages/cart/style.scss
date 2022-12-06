@@ -41,6 +41,10 @@
         width: 81px;
     }
 
+    &-item__info {
+        padding-right: 30px;
+    }
+
     &-item__code {
         @include font(15px, 15px, false, 800);
         margin-bottom: 8px;

@@ -278,7 +278,7 @@
             display: none;
         }
 
-        &__items {
+        &__list {
             flex-direction: row;
             @include font(16px, 20px, false, 500);
             gap: 53px;
@@ -301,7 +301,7 @@
             @media(any-hover:hover) {
                 &:hover {
 
-                    .menu__list,
+                    .menu__sub-list,
                     .menu__item-line {
                         opacity: 1;
                         visibility: visible;
@@ -317,7 +317,7 @@
             max-width: none;
         }
 
-        &__list {
+        &__sub-list {
             display: block;
             background-color: #FFF;
             border: 1px solid var(--bg-color-2);
@@ -329,7 +329,7 @@
             transition: opacity .5s ease, visibility .5s ease;
         }
 
-        &__list-item {
+        &__sub-item {
             @include font(16px, 52px, #000, 500);
             cursor: pointer;
 
@@ -344,7 +344,7 @@
             }
         }
 
-        &__list-link {
+        &__sub-link {
             padding: 0 30px;
             display: block;
         }

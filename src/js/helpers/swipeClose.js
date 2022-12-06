@@ -16,7 +16,7 @@ export function handleTouchMove(direction, activeClass, event) {
             }
             let x2 = event.touches[0].clientX
             let xDiff = x2 - x1
-            if (xDiff > 150) {
+            if (xDiff > 100) {
                 this.classList.remove(activeClass)
             }
             break
@@ -26,7 +26,7 @@ export function handleTouchMove(direction, activeClass, event) {
             }
             let y2 = event.touches[0].clientY
             let yDiff = y2 - y1
-            if (yDiff < -150) {
+            if (yDiff < -100) {
                 this.classList.remove(activeClass)
             }
 

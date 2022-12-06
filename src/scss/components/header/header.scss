@@ -55,7 +55,7 @@
     }
 }
 
-.menu__list,
+// .menu__list,
 .cart__items-container {
     display: none;
 }
@@ -100,7 +100,7 @@
     }
 
     &__amount-items {
-        @include font(16px, 20px, var(--text-color-main), 500);
+        @include font(12px, 20px, var(--text-color-main), 500);
         position: absolute;
         top: -6px;
         left: 25px;
@@ -113,29 +113,53 @@
     }
 }
 
+
+
 .menu {
+    display: flex;
+    align-items: center;
+
+    &--active {
+        .menu__line:nth-child(1) {
+            transform: translateY(10px) rotate(45deg);
+        }
+
+        .menu__line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu__line:nth-child(3) {
+            transform: translateY(-10px) rotate(-45deg);
+        }
+
+        .menu__body {
+            translate: 0;
+            transition: translate .5s ease;
+        }
+    }
 
     &__head {
-        @include flexbox(false, false, 10px);
-        padding: 23px 1px 0 0;
+        @include font(16px, 17px, false, 500);
+        @include flexbox(false, center, 10px);
         cursor: pointer;
     }
 
-    &__text {
-        @include font(14px, 17px, false, 500);
-    }
-
     &__icon {
+        z-index: 14;
         height: 24px;
+        width: 29px;
         @include flexbox(space-between, false, false, column);
+        transition: .3s ease;
     }
 
     &__line {
         background: var(--text-color-main);
         border-radius: 6px;
         height: 4px;
-        width: 29px;
+        width: 100%;
+        transition: transform .5s ease, opacity .3s ease;
     }
+
 
     &__body {
         height: 100vh;
@@ -153,12 +177,7 @@
         overflow-y: auto;
     }
 
-    &__body--active {
-        translate: 0;
-        transition: translate .5s ease;
-    }
-
-    &__items {
+    &__list {
         @include flexbox(false, false, 15px, column);
         @include font(18px, 22px, var(--text-color-main), 500);
         padding: 48px 0;
@@ -182,5 +201,9 @@
         position: absolute;
         top: 10px;
         right: 10px;
+    }
+
+    &__sub-list {
+        display: none;
     }
 }

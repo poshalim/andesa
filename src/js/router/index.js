@@ -6,8 +6,8 @@ export const locationResolver = (location, code) => {
     switch (location) {
         case "catalog.html":
             catalogPage.init() // рендер и инициализация элементов на странице
-
             break
+
         case `#/product/${code}/`:
             productPage.init(code) // рендер и инициализация элементов на странице
             break
